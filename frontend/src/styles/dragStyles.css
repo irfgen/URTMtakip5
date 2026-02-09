@@ -1,0 +1,27 @@
+/* Custom styles for drag and drop */
+.custom-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #bbbbbb #f5f5f5;
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+.custom-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll-container::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.custom-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 4px;
+}
+
+/* Style for items being dragged */
+.dragging-item {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+  opacity: 0.9 !important;
+  background-color: rgba(25, 118, 210, 0.1) !important;
+}

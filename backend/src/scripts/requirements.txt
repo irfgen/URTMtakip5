@@ -1,0 +1,22 @@
+# SolidWorks COM Automation Requirements
+# Bu dosyaları kurmak için: pip install -r requirements.txt
+
+# Windows COM automation için gerekli
+pywin32>=301
+
+# JSON ve dosya işlemleri için (Python built-in, ek kurulum gerekmez)
+# json
+# os
+# pathlib
+# logging
+# time
+# sys
+
+# Opsiyonel: Gelişmiş hata raporlama için
+# sentry-sdk>=1.0.0
+
+# Opsiyonel: Progress bar için
+# tqdm>=4.60.0
+
+# Opsiyonel: Konfigürasyon dosyası desteği
+# pyyaml>=6.0

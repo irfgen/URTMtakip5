@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# ÜRTM Takip Navigasyon Script Wrapper
+# Kullanım: ./nav [rol/tip]
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOCS_DIR="$SCRIPT_DIR/docs"
+
+# Kontrol et docs dizini var mı
+if [ ! -d "$DOCS_DIR" ]; then
+    echo "❌ Hata: docs dizini bulunamadı: $DOCS_DIR"
+    exit 1
+fi
+
+# Kontrol et nav-helper.js var mı
+if [ ! -f "$DOCS_DIR/nav-helper.js" ]; then
+    echo "❌ Hata: nav-helper.js bulunamadı: $DOCS_DIR/nav-helper.js"
+    exit 1
+fi
+
+# Node.js kontrol
+if ! command -v node &> /dev/null; then
+    echo "❌ Hata: Node.js kurulu değil"
+    exit 1
+fi
+
+# Scripti çalıştır
+node "$DOCS_DIR/nav-helper.js" "$@"

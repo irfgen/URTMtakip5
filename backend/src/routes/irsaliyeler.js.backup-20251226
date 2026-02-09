@@ -1,0 +1,419 @@
+const express = require('express');
+const router = express.Router();
+const authMiddleware = require('../middleware/auth');
+const irsaliyeController = require('../controllers/irsaliyeController');
+const { body, param, query, validationResult } = require('express-validator');
+
+// Apply auth middleware to all routes (skip in test mode)
+if (process.env.NODE_ENV !== 'test') {
+  router.use(authMiddleware);
+} else {
+  // In test mode, use a pass-through middleware that sets req.user and req.io
+  // User ID can be passed via X-Test-User-Id header for multi-user tests
+  router.use((req, res, next) => {
+    const testUserId = req.headers['x-test-user-id']
+      ? parseInt(req.headers['x-test-user-id'])
+      : 1;
+
+    req.user = {
+      id: testUserId,
+      ad_soyad: 'Test User',
+      email: 'test@example.com',
+      role: ['admin']
+    };
+    req.io = null;
+    next();
+  });
+}
+
+// GET /api/irsaliyeler - List with filters
+router.get('/', [
+    query('page').optional().isInt({ min: 1 }),
+    query('limit').optional().isInt({ min: 1, max: 100 }),
+    query('tedarikci_id').optional().isInt(),
+    query('durum').optional().isIn(['bekliyor', 'kismi_eslesti', 'tam_eslesti']),
+    query('baslangic_tarih').optional().isISO8601().toDate(),
+    query('bitis_tarih').optional().isISO8601().toDate()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({
+            success: false,
+            errors: errors.array()
+        });
+    }
+
+    try {
+        const result = await irsaliyeController.list(req.query);
+        res.json({
+            success: true,
+            data: result.data,
+            pagination: result.pagination
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+// GET /api/irsaliyeler/:id - Detail
+router.get('/:id', [
+    param('id').isInt()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const data = await irsaliyeController.getById(req.params.id, req.user);
+        res.json({ success: true, data });
+    } catch (error) {
+        if (error.message === 'NOT_FOUND') {
+            return res.status(404).json({ success: false, error: 'İrsaliye bulunamadı' });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// POST /api/irsaliyeler - Create
+router.post('/', [
+    body('irsaliye_no').trim().notEmpty().isLength({ max: 50 }),
+    body('tedarikci_id').isInt(),
+    body('belge_tarih').isISO8601().toDate(),
+    body('belge_tipi').optional().isIn(['gelis', 'cikis']),
+    body('aciklama').optional().trim(),
+    body('kalemler').optional().isArray()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const data = await irsaliyeController.create(req.body, req.user);
+        res.status(201).json({
+            success: true,
+            message: 'İrsaliye başarıyla oluşturuldu',
+            data
+        });
+    } catch (error) {
+        if (error.message === 'DUPLICATE_ENTRY') {
+            return res.status(400).json({
+                success: false,
+                error: 'Bu irsaliye no zaten mevcut'
+            });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// PUT /api/irsaliyeler/:id - Update
+router.put('/:id', [
+    param('id').isInt(),
+    body('irsaliye_no').optional().trim().notEmpty().isLength({ max: 50 }),
+    body('tedarikci_id').optional().isInt(),
+    body('belge_tarih').optional().isISO8601().toDate(),
+    body('belge_tipi').optional().isIn(['gelis', 'cikis']),
+    body('aciklama').optional().trim()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const data = await irsaliyeController.update(req.params.id, req.body, req.user);
+        res.json({
+            success: true,
+            message: 'İrsaliye başarıyla güncellendi',
+            data
+        });
+    } catch (error) {
+        if (error.message === 'NOT_FOUND') {
+            return res.status(404).json({ success: false, error: 'İrsaliye bulunamadı' });
+        }
+        if (error.message === 'LOCKED_BY_OTHER') {
+            return res.status(409).json({
+                success: false,
+                error: 'Kayıt başka bir kullanıcı tarafından kilitli'
+            });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// DELETE /api/irsaliyeler/:id - Delete
+router.delete('/:id', [
+    param('id').isInt()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        await irsaliyeController.delete(req.params.id, req.user);
+        res.json({ success: true, message: 'İrsaliye başarıyla silindi' });
+    } catch (error) {
+        if (error.message === 'NOT_FOUND') {
+            return res.status(404).json({ success: false, error: 'İrsaliye bulunamadı' });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// GET /api/irsaliyeler/:id/kalemler - List items
+router.get('/:id/kalemler', [
+    param('id').isInt()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const data = await irsaliyeController.getKalemler(req.params.id);
+        res.json({ success: true, data });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// POST /api/irsaliyeler/:id/kalemler - Add item
+router.post('/:id/kalemler', [
+    param('id').isInt(),
+    body('stok_kodu').trim().notEmpty(),
+    body('parca_adi').trim().notEmpty(),
+    body('miktar').isFloat({ min: 0.0001 }),
+    body('birim').optional().trim(),
+    body('aciklama').optional().trim()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const data = await irsaliyeController.addKalem(req.params.id, req.body, req.user);
+        res.status(201).json({
+            success: true,
+            message: 'Kalem başarıyla eklendi',
+            data
+        });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// POST /api/irsaliyeler/:id/lock - Acquire lock
+router.post('/:id/lock', [
+    param('id').isInt()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const result = await irsaliyeController.acquireLock(req.params.id, req.user.id);
+
+        // Emit Socket.IO event
+        if (req.io) {
+            req.io.of('/fatura-eslestirme').emit('lock-acquired', {
+                belgeTipi: 'irsaliye',
+                belgeId: req.params.id,
+                lockedBy: req.user.id,
+                lockedAt: result.locked_at
+            });
+        }
+
+        res.json({ success: true, data: result });
+    } catch (error) {
+        if (error.message === 'LOCKED_BY_OTHER') {
+            return res.status(409).json({
+                success: false,
+                error: 'Kayıt başka bir kullanıcı tarafından kilitli',
+                lockedBy: error.lockedBy,
+                lockedAt: error.lockedAt
+            });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// DELETE /api/irsaliyeler/:id/lock - Release lock
+router.delete('/:id/lock', async (req, res) => {
+    try {
+        await irsaliyeController.releaseLock(req.params.id, req.user.id);
+
+        if (req.io) {
+            req.io.of('/fatura-eslestirme').emit('lock-released', {
+                belgeTipi: 'irsaliye',
+                belgeId: req.params.id
+            });
+        }
+
+        res.json({ success: true, message: 'Lock bırakıldı' });
+    } catch (error) {
+        if (error.message === 'NOT_LOCK_OWNER') {
+            return res.status(403).json({
+                success: false,
+                error: 'Sadece kendi lockunuzu bırakabilirsiniz'
+            });
+        }
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// POST /api/irsaliyeler/:id/force-unlock - Admin force unlock
+router.post('/:id/force-unlock', [
+    param('id').isInt(),
+    body('reason').trim().notEmpty()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    // Admin check
+    if (!req.user.role?.includes('admin')) {
+        return res.status(403).json({
+            success: false,
+            error: 'Only admins can force unlock'
+        });
+    }
+
+    try {
+        const result = await irsaliyeController.forceUnlock(
+            req.params.id,
+            req.user.id,
+            req.body.reason
+        );
+
+        if (req.io && result.previousLockHolder) {
+            req.io.of('/fatura-eslestirme').to(result.previousLockHolder.toString()).emit('lock-force-released', {
+                belgeTipi: 'irsaliye',
+                belgeId: req.params.id,
+                reason: req.body.reason,
+                releasedBy: req.user.ad_soyad
+            });
+        }
+
+        res.json({ success: true, message: 'Lock zorla bırakıldı' });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// POST /api/irsaliyeler/analiz - AI ile irsaliye analizi (doğrudan Gemini Vision API)
+router.post('/analiz', [
+    body('image').notEmpty().withMessage('Image data is required'),
+    body('irsaliye_no').optional().trim()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, errors: errors.array() });
+    }
+
+    try {
+        const { image, irsaliye_no } = req.body;
+
+        // Gemini API Key
+        const apiKey = process.env.GEMINI_API_KEY || 'AIzaSyBiaNep4qK96uL7G775GHBWJHQtUExNw2s';
+
+        // Base64 image data'sını çıkar (data:image/...;base64, formatı)
+        let base64Data = image;
+        if (image.includes(',')) {
+            base64Data = image.split(',')[1];
+        }
+
+        // Gemini Vision API isteği
+        const geminiResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [
+                        {
+                            inline_data: {
+                                mime_type: "image/jpeg",
+                                data: base64Data
+                            }
+                        },
+                        {
+                            text: `Bu irsaliye belgesini analiz et ve şu JSON formatında döndür:
+{
+  "irsaliye_no": "string",
+  "tedarikci_adi": "string",
+  "belge_tarih": "DD.MM.YYYY",
+  "aciklama": "string",
+  "kalemler": [
+    {
+      "stok_kodu": "string",
+      "parca_adi": "string",
+      "miktar": number,
+      "birim": "string",
+      "aciklama": "string"
+    }
+  ]
+}
+Sadece JSON formatında cevap ver, açıklama yapma.`
+                        }
+                    ]
+                }]
+            })
+        });
+
+        if (!geminiResponse.ok) {
+            const errorText = await geminiResponse.text();
+            console.error('Gemini API error:', errorText);
+            throw new Error(`Gemini API error: ${geminiResponse.status} ${geminiResponse.statusText}`);
+        }
+
+        const geminiResult = await geminiResponse.json();
+
+        // Gemini yanıtından JSON veriyi çıkar
+        let responseText = geminiResult.candidates[0].content.parts[0].text;
+
+        // Markdown kod bloğunu temizle
+        let jsonText = responseText;
+        const codeBlockMatch = responseText.match(/```json\s*([\s\S]*?)\s*```/);
+        if (codeBlockMatch) {
+            jsonText = codeBlockMatch[1];
+        }
+
+        // JSON parse
+        let parsedData;
+        try {
+            parsedData = JSON.parse(jsonText);
+        } catch (e) {
+            parsedData = {
+                error: 'JSON parse hatası',
+                raw_response: jsonText
+            };
+        }
+
+        // İrsaliye no ekle
+        if (!parsedData.irsaliye_no && irsaliye_no) {
+            parsedData.irsaliye_no = irsaliye_no;
+        }
+
+        res.json({
+            success: true,
+            data: parsedData
+        });
+    } catch (error) {
+        console.error('İrsaliye AI analiz hatası:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message || 'AI analizi sırasında hata oluştu'
+        });
+    }
+});
+
+module.exports = router;

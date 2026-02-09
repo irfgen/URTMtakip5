@@ -1,0 +1,16 @@
+[Unit]
+Description=URTM Takip Servisi
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/URTMtakip
+ExecStart=/usr/bin/python3 /home/pi/URTMtakip/main.py
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=urtmtakip
+
+[Install]
+WantedBy=multi-user.target

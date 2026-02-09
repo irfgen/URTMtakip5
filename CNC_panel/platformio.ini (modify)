@@ -1,0 +1,26 @@
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+lib_deps = ArduinoJson
+
+[test]
+framework = unity
+build_flags = -DUNITY_INCLUDE_CONFIG_H
+
+[test/test_main.cpp]
+#include <Arduino.h>
+#include <unity.h>
+
+void test_example() {
+    TEST_ASSERT_EQUAL(1, 1);
+}
+
+void setup() {
+    UNITY_BEGIN();
+    RUN_TEST(test_example);
+    UNITY_END();
+}
+
+void loop() {
+}

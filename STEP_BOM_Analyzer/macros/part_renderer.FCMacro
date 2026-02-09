@@ -1,0 +1,383 @@
+# -*- coding: utf-8 -*-
+"""
+STEP BOM Analyzer - Part Renderer Macro
+FreeCAD Native Macro for part screenshots and visualization
+
+This macro handles:
+- FreeCAD GUI screenshot capabilities
+- Multi-viewpoint rendering (6 standard views)
+- Part isolation and highlighting
+- Batch screenshot processing
+- Thumbnail generation
+"""
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import os
+import json
+from datetime import datetime
+import sys
+
+# Macro Information
+__title__ = "STEP BOM Analyzer - Part Renderer"
+__author__ = "ÜRTM Takip Ekibi"
+__version__ = "3.0.0"
+__date__ = "2025-09-07"
+
+def log_message(message, level="INFO"):
+    """FreeCAD Console'a mesaj yaz"""
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    formatted_msg = f"[{timestamp}] PART_RENDERER - {level}: {message}"
+    
+    if level == "ERROR":
+        App.Console.PrintError(formatted_msg + "\n")
+    elif level == "WARNING": 
+        App.Console.PrintWarning(formatted_msg + "\n")
+    else:
+        App.Console.PrintMessage(formatted_msg + "\n")
+
+class ViewpointManager:
+    """Standard viewpoint configurations"""
+    
+    VIEWPOINTS = {
+        'front': {'rotation': (0, 0, 0, 1), 'name': 'Front'},
+        'back': {'rotation': (0, 0, 1, 0), 'name': 'Back'},
+        'left': {'rotation': (0, 0, 0.707, 0.707), 'name': 'Left'},
+        'right': {'rotation': (0, 0, -0.707, 0.707), 'name': 'Right'},
+        'top': {'rotation': (0.707, 0, 0, 0.707), 'name': 'Top'},
+        'bottom': {'rotation': (-0.707, 0, 0, 0.707), 'name': 'Bottom'},
+        'iso': {'rotation': (0.424, 0.20, 0.66, 0.58), 'name': 'Isometric'},
+        'iso2': {'rotation': (-0.424, -0.20, -0.66, 0.58), 'name': 'Isometric 2'}
+    }
+    
+    @classmethod
+    def get_viewpoint_names(cls):
+        """Mevcut viewpoint isimlerini döndür"""
+        return list(cls.VIEWPOINTS.keys())
+    
+    @classmethod
+    def set_viewpoint(cls, viewpoint_name):
+        """Belirtilen viewpoint'i ayarla"""
+        if viewpoint_name not in cls.VIEWPOINTS:
+            raise ValueError(f"Geçersiz viewpoint: {viewpoint_name}")
+        
+        view_config = cls.VIEWPOINTS[viewpoint_name]
+        
+        try:
+            # Active view'i al
+            view = Gui.ActiveDocument.ActiveView
+            
+            # Kamera rotasyonunu ayarla
+            rotation = view_config['rotation']
+            view.viewRotation(*rotation)
+            
+            # Fit all
+            view.fitAll()
+            
+            log_message(f"Viewpoint ayarlandı: {view_config['name']}")
+            return True
+            
+        except Exception as e:
+            log_message(f"Viewpoint ayarlama hatası: {str(e)}", "ERROR")
+            return False
+
+class PartScreenshotManager:
+    """Part screenshot management"""
+    
+    def __init__(self, document=None, resolution=(1920, 1080)):
+        self.document = document or App.ActiveDocument
+        self.gui_document = Gui.ActiveDocument if Gui.ActiveDocument else None
+        self.resolution = resolution
+        
+        if not self.document:
+            raise RuntimeError("Aktif FreeCAD dokümantı bulunamadı")
+        
+        if not self.gui_document:
+            raise RuntimeError("FreeCAD GUI bulunamadı - GUI modu gerekli")
+    
+    def setup_rendering_environment(self):
+        """Screenshot için render ortamını hazırla"""
+        try:
+            # GUI view'i ayarla
+            view = self.gui_document.ActiveView
+            
+            # Render kalitesi ayarları
+            view.setAnimationEnabled(False)
+            
+            # Background color (white)
+            view.setBackgroundColor(1.0, 1.0, 1.0)
+            
+            # Anti-aliasing
+            view.setRenderCache(0)  # Disable cache for consistent results
+            
+            log_message("Render ortamı hazırlandı")
+            return True
+            
+        except Exception as e:
+            log_message(f"Render ortamı hazırlama hatası: {str(e)}", "ERROR")
+            return False
+    
+    def isolate_object(self, obj_name):
+        """Tek nesneyi göster, diğerlerini gizle"""
+        try:
+            hidden_objects = []
+            
+            for obj in self.document.Objects:
+                if obj.Name != obj_name:
+                    if hasattr(obj, 'ViewObject') and obj.ViewObject:
+                        if obj.ViewObject.Visibility:
+                            obj.ViewObject.Visibility = False
+                            hidden_objects.append(obj.Name)
+                else:
+                    # Target object'i görünür yap
+                    if hasattr(obj, 'ViewObject') and obj.ViewObject:
+                        obj.ViewObject.Visibility = True
+            
+            # Document'i güncelle
+            self.gui_document.update()
+            
+            log_message(f"Nesne izole edildi: {obj_name} ({len(hidden_objects)} gizlendi)")
+            return hidden_objects
+            
+        except Exception as e:
+            log_message(f"Nesne izolasyon hatası: {str(e)}", "ERROR")
+            return []
+    
+    def restore_visibility(self, hidden_objects):
+        """Gizlenen nesneleri tekrar göster"""
+        try:
+            for obj_name in hidden_objects:
+                obj = self.document.getObject(obj_name)
+                if obj and hasattr(obj, 'ViewObject') and obj.ViewObject:
+                    obj.ViewObject.Visibility = True
+            
+            # Document'i güncelle
+            self.gui_document.update()
+            
+            log_message(f"Görünürlük geri yüklendi: {len(hidden_objects)} nesne")
+            
+        except Exception as e:
+            log_message(f"Görünürlük geri yükleme hatası: {str(e)}", "WARNING")
+    
+    def capture_screenshot(self, output_path, viewpoint='iso'):
+        """Screenshot al"""
+        try:
+            # Viewpoint ayarla
+            if not ViewpointManager.set_viewpoint(viewpoint):
+                return False
+            
+            # Kısa bekleme (render için)
+            import time
+            time.sleep(0.5)
+            
+            # Screenshot al
+            view = self.gui_document.ActiveView
+            view.saveImage(output_path, *self.resolution, 'White')
+            
+            # Dosya varlığını kontrol et
+            if os.path.exists(output_path):
+                file_size = os.path.getsize(output_path)
+                log_message(f"Screenshot kaydedildi: {os.path.basename(output_path)} ({file_size} bytes)")
+                return True
+            else:
+                log_message(f"Screenshot dosyası oluşturulamadı: {output_path}", "ERROR")
+                return False
+                
+        except Exception as e:
+            log_message(f"Screenshot alma hatası: {str(e)}", "ERROR")
+            return False
+    
+    def render_part_multiview(self, obj_name, output_dir, viewpoints=None):
+        """Bir part'ın çoklu açıdan screenshot'larını al"""
+        if viewpoints is None:
+            viewpoints = ['front', 'back', 'left', 'right', 'top', 'iso']
+        
+        log_message(f"Multi-view render başlatılıyor: {obj_name}")
+        
+        try:
+            # Output dizini oluştur
+            os.makedirs(output_dir, exist_ok=True)
+            
+            # Render ortamını hazırla
+            if not self.setup_rendering_environment():
+                return {"success": False, "error": "Render ortamı hazırlanamadı"}
+            
+            # Nesneyi izole et
+            hidden_objects = self.isolate_object(obj_name)
+            
+            screenshots = {}
+            
+            # Her viewpoint için screenshot al
+            for viewpoint in viewpoints:
+                try:
+                    output_filename = f"{obj_name}_{viewpoint}.png"
+                    output_path = os.path.join(output_dir, output_filename)
+                    
+                    success = self.capture_screenshot(output_path, viewpoint)
+                    
+                    screenshots[viewpoint] = {
+                        "success": success,
+                        "path": output_path,
+                        "filename": output_filename,
+                        "exists": os.path.exists(output_path)
+                    }
+                    
+                except Exception as e:
+                    log_message(f"Viewpoint render hatası ({viewpoint}): {str(e)}", "WARNING")
+                    screenshots[viewpoint] = {"success": False, "error": str(e)}
+            
+            # Görünürlüğü geri yükle
+            self.restore_visibility(hidden_objects)
+            
+            # Sonuçları değerlendir
+            successful_screenshots = [v for v in screenshots.values() if v.get("success", False)]
+            
+            log_message(f"Multi-view render tamamlandı: {len(successful_screenshots)}/{len(viewpoints)} başarılı")
+            
+            return {
+                "success": len(successful_screenshots) > 0,
+                "screenshots": screenshots,
+                "successful_count": len(successful_screenshots),
+                "total_count": len(viewpoints)
+            }
+            
+        except Exception as e:
+            log_message(f"Multi-view render genel hatası: {str(e)}", "ERROR")
+            return {"success": False, "error": str(e)}
+    
+    def batch_render_parts(self, output_dir, viewpoints=None, part_filter=None):
+        """Tüm part'ların batch rendering'i"""
+        log_message("Batch part rendering başlatılıyor...")
+        
+        try:
+            # Parts'ları filtrele
+            parts_to_render = []
+            
+            for obj in self.document.Objects:
+                # Part filtresi uygula
+                if part_filter:
+                    if not part_filter(obj):
+                        continue
+                
+                # Render edilebilir nesne kontrolü
+                if hasattr(obj, 'Shape') and obj.Shape:
+                    parts_to_render.append(obj)
+                elif hasattr(obj, 'ViewObject') and obj.ViewObject:
+                    parts_to_render.append(obj)
+            
+            log_message(f"Render edilecek part sayısı: {len(parts_to_render)}")
+            
+            # Output dizini oluştur
+            os.makedirs(output_dir, exist_ok=True)
+            
+            batch_results = {}
+            successful_renders = 0
+            
+            # Her part için render
+            for i, obj in enumerate(parts_to_render):
+                try:
+                    log_message(f"Progress: {i+1}/{len(parts_to_render)} - {obj.Name}")
+                    
+                    # Part için alt dizin oluştur
+                    part_output_dir = os.path.join(output_dir, obj.Name)
+                    
+                    # Multi-view render
+                    result = self.render_part_multiview(obj.Name, part_output_dir, viewpoints)
+                    
+                    batch_results[obj.Name] = result
+                    
+                    if result["success"]:
+                        successful_renders += 1
+                    
+                except Exception as e:
+                    log_message(f"Part render hatası ({obj.Name}): {str(e)}", "WARNING")
+                    batch_results[obj.Name] = {"success": False, "error": str(e)}
+            
+            log_message(f"Batch rendering tamamlandı: {successful_renders}/{len(parts_to_render)} başarılı")
+            
+            return {
+                "success": successful_renders > 0,
+                "batch_results": batch_results,
+                "successful_renders": successful_renders,
+                "total_parts": len(parts_to_render)
+            }
+            
+        except Exception as e:
+            log_message(f"Batch rendering genel hatası: {str(e)}", "ERROR")
+            return {"success": False, "error": str(e)}
+
+def render_parts_from_document(output_dir, viewpoints=None, resolution=None):
+    """Ana part rendering fonksiyonu"""
+    if viewpoints is None:
+        viewpoints = ['front', 'back', 'left', 'right', 'top', 'iso']
+    
+    if resolution is None:
+        resolution = (1920, 1080)
+    
+    log_message("=" * 60)
+    log_message("STEP BOM Analyzer - Part Rendering")
+    log_message("=" * 60)
+    
+    try:
+        # Screenshot manager oluştur
+        renderer = PartScreenshotManager(resolution=resolution)
+        
+        # Part filtresi (sadece geometry'si olan nesneler)
+        def part_filter(obj):
+            return hasattr(obj, 'Shape') and obj.Shape and obj.Shape.Volume > 0
+        
+        # Batch rendering
+        result = renderer.batch_render_parts(output_dir, viewpoints, part_filter)
+        
+        if result["success"]:
+            log_message("=" * 60)
+            log_message("PART RENDERING COMPLETED SUCCESSFULLY!")
+            log_message(f"📸 Başarılı render: {result['successful_renders']}/{result['total_parts']}")
+            log_message(f"📂 Output dizini: {output_dir}")
+            log_message("=" * 60)
+        
+        return result
+        
+    except Exception as e:
+        log_message(f"Part rendering genel hatası: {str(e)}", "ERROR")
+        return {"success": False, "error": str(e)}
+
+# Ana macro fonksiyonu
+def main():
+    """Ana part renderer fonksiyonu"""
+    
+    # Test parametreleri
+    test_output_dir = r"C:\temp\part_renders"
+    test_viewpoints = ['front', 'back', 'iso']
+    test_resolution = (1280, 720)
+    
+    # Parametreler (macro manager'dan gelecek)
+    if 'MACRO_PARAMETERS' in globals():
+        params = globals()['MACRO_PARAMETERS']
+        output_dir = params.get('output_directory', test_output_dir)
+        viewpoints = params.get('viewpoints', test_viewpoints)
+        resolution = params.get('resolution', test_resolution)
+    else:
+        output_dir = test_output_dir
+        viewpoints = test_viewpoints
+        resolution = test_resolution
+        log_message("Test modunda çalışıyor - gerçek parametreleri bekliyor")
+    
+    # Part rendering
+    result = render_parts_from_document(output_dir, viewpoints, resolution)
+    
+    # Sonucu yazdır
+    if result["success"]:
+        log_message("✅ Part Rendering tamamlandı!")
+        print("PART_RENDERING_SUCCESS")
+        print("PART_RENDERING_DATA_START")
+        print(json.dumps(result, indent=2, default=str))
+        print("PART_RENDERING_DATA_END")
+    else:
+        log_message(f"❌ Part Rendering hatası: {result['error']}", "ERROR")
+    
+    return result
+
+# FreeCAD Macro olarak çalıştırıldığında
+if __name__ == "__main__":
+    main()

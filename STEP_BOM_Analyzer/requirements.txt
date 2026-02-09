@@ -1,0 +1,54 @@
+# STEP BOM Analyzer Windows Requirements
+# FreeCAD entegrasyonu icin temel gereksinimler
+
+# GUI ve veri islemleri
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Excel ve CSV desteleri  
+openpyxl>=3.0.0
+xlsxwriter>=3.0.0
+
+# JSON ve XML islemleri
+lxml>=4.6.0
+
+# HTTP ve API islemleri
+requests>=2.25.0
+urllib3>=1.26.0
+
+# Dosya islemleri ve path yönetimi
+pathlib2>=2.3.0
+
+# Loglama ve hata yönetimi
+loguru>=0.6.0
+
+# Test ve development
+pytest>=6.0.0
+
+# Görsel işlemler (GUI için)
+Pillow>=9.0.0
+
+# System utilities
+psutil>=5.8.0
+
+# Not: FreeCAD kendi Python ile gelir, ek kurulum gerekmez
+# Tkinter Windows Python ile otomatik gelir
+
+# CAD Libraries (Special Installation Required):
+# ============================================
+# 
+# 1. FreeCAD (ZORUNLU):
+#    - Download from: https://www.freecadweb.org/
+#    - Windows installer ile kurun
+#    - Python API desteği aktif olsun
+#
+# Installation Order:
+# ===================
+# 1. FreeCAD'ı Windows'a kurun
+# 2. pip install -r requirements.txt (FreeCAD Python ile)
+# 3. ÇALIŞTIR.bat dosyasını çalıştırın
+#
+# Hızlı Test:
+# ===========
+# "C:\Program Files\FreeCAD 1.0\bin\python.exe" -m pip install -r requirements.txt
+# "C:\Program Files\FreeCAD 1.0\bin\python.exe" test_freecad_wrapper.py

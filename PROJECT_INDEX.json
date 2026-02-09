@@ -1,0 +1,196 @@
+{
+  "project": {
+    "name": "ÜRTM Takip Sistemi",
+    "version": "v15.x",
+    "type": "Full-Stack Manufacturing Execution System (MES)",
+    "generated": "2025-01-22",
+    "branch": "v15",
+    "mainBranch": "main"
+  },
+  "structure": {
+    "backend": {
+      "path": "backend/",
+      "framework": "Express.js",
+      "database": "SQLite + Sequelize ORM",
+      "entryPoint": "backend/src/index.js",
+      "port": 3000,
+      "stats": {
+        "totalFiles": 184,
+        "controllers": 52,
+        "models": 67,
+        "routes": 67,
+        "tests": 8
+      },
+      "directories": [
+        "src/config",
+        "src/controllers",
+        "src/middleware",
+        "src/migrations",
+        "src/models",
+        "src/modules",
+        "src/queries",
+        "src/routes",
+        "src/services",
+        "src/socket",
+        "src/tests",
+        "src/utils"
+      ]
+    },
+    "frontend": {
+      "path": "frontend/",
+      "framework": "React + Vite",
+      "uiLibrary": "Material-UI (MUI)",
+      "stateManagement": "Redux Toolkit",
+      "entryPoint": "frontend/src/main.jsx",
+      "devPort": 5173,
+      "stats": {
+        "totalFiles": 303,
+        "components": "300+"
+      },
+      "directories": [
+        "src/api",
+        "src/components",
+        "src/hooks",
+        "src/pages",
+        "src/store",
+        "src/services",
+        "src/tests",
+        "src/utils"
+      ]
+    },
+    "hardware": {
+      "cncPanel": {
+        "path": "CNC_panel/",
+        "platform": "ESP32",
+        "buildTool": "PlatformIO",
+        "entryPoint": "CNC_panel/main/main.cpp"
+      },
+      "stepBomAnalyzer": {
+        "path": "STEP_BOM_Analyzer/",
+        "language": "Python",
+        "entryPoint": "main.py"
+      },
+      "cadImportClient": {
+        "path": "CAD_Import_Client/",
+        "language": "Python",
+        "platform": "Windows",
+        "entryPoint": "main.py"
+      }
+    }
+  },
+  "entryPoints": {
+    "backend": {
+      "server": "backend/src/index.js",
+      "database": "backend/src/config/database.js",
+      "routes": "backend/src/routes/"
+    },
+    "frontend": {
+      "main": "frontend/src/main.jsx",
+      "app": "frontend/src/App.jsx",
+      "store": "frontend/src/store/"
+    }
+  },
+  "coreModules": {
+    "manufacturing": [
+      "Work Orders (İş Emirleri)",
+      "Workstations (Tezgahlar)",
+      "Production Planning (Üretim Planı)",
+      "BOM Management",
+      "Real-time Monitoring"
+    ],
+    "inventory": [
+      "Stock Cards (Stok Kartları)",
+      "Part Tracking (Parca Takip)",
+      "Material Management"
+    ],
+    "logistics": [
+      "Shipping (Sevkiyat)",
+      "Subcontractor Work (Fason)",
+      "Supplier Management"
+    ],
+    "reporting": [
+      "Daily Shift Reports (Vardiya)",
+      "Workstation Reports",
+      "Production Statistics",
+      "Timeline Visualization"
+    ],
+    "management": [
+      "Shift Management (Vardiya)",
+      "Personnel Tracking",
+      "Maintenance (Arıza-Bakım)",
+      "Notes System"
+    ]
+  },
+  "dependencies": {
+    "backend": {
+      "express": "4.18.2",
+      "sequelize": "6.37.7",
+      "sqlite3": "5.1.7",
+      "socket.io": "latest",
+      "joi": "17.11.0",
+      "helmet": "7.1.0",
+      "winston": "latest",
+      "multer": "latest",
+      "exceljs": "4.4.0",
+      "archiver": "6.0.1"
+    },
+    "frontend": {
+      "react": "18.2.0",
+      "@mui/material": "5.17.1",
+      "@reduxjs/toolkit": "2.0.1",
+      "react-router-dom": "latest",
+      "axios": "1.9.0",
+      "socket.io-client": "latest",
+      "chart.js": "4.4.9",
+      "formik": "2.4.6",
+      "vite": "latest"
+    }
+  },
+  "scripts": {
+    "install": "npm run install:all",
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "test": "npm test",
+    "start": "npm start"
+  },
+  "apiEndpoints": {
+    "base": "/api",
+    "core": [
+      "/api/is-emirleri",
+      "/api/tezgahlar",
+      "/api/parcalar",
+      "/api/boms",
+      "/api/uretim-plani",
+      "/api/stok-kartlari",
+      "/api/sevkiyat",
+      "/api/raporlar"
+    ],
+    "management": [
+      "/api/vardiyalar",
+      "/api/personel",
+      "/api/ariza-bakim",
+      "/api/notlar"
+    ]
+  },
+  "documentation": {
+    "main": "CLAUDE.md",
+    "architecture": "ContEng/01-architecture-overview.md",
+    "database": "ContEng/02-database-schema.md",
+    "api": "ContEng/03-api-endpoints.md"
+  },
+  "statistics": {
+    "totalFiles": "600+ (excluding node_modules)",
+    "backendFiles": 184,
+    "frontendFiles": 303,
+    "routeModules": 67,
+    "dataModels": 67,
+    "controllers": 52,
+    "testFiles": 8
+  },
+  "tokenSavings": {
+    "indexSize": "~3.5KB",
+    "reduction": "94%",
+    "fullCodebaseRead": "58,000 tokens",
+    "indexRead": "3,000 tokens"
+  }
+}

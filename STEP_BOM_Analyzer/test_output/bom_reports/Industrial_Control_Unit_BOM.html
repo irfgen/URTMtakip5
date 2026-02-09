@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Control Unit - Bill of Materials - Industrial_Control_Unit</title>
+    <style>
+        
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+                
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; }
+                .header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+                .metadata { margin-top: 1.5rem; }
+                .metadata-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; text-align: left; }
+                
+                .statistics { padding: 2rem; }
+                .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+                .stat-card { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; text-align: center; border-left: 4px solid #667eea; }
+                .stat-number { font-size: 2rem; font-weight: bold; color: #667eea; }
+                .stat-label { color: #666; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+                
+                .category-stats { margin-top: 2rem; }
+                .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 1rem; }
+                .category-item { display: flex; justify-content: space-between; padding: 0.5rem 1rem; background: #e9ecef; border-radius: 4px; }
+                .category-count { font-weight: bold; color: #667eea; }
+                
+                .bom-section { padding: 2rem; }
+                .group-header { color: #667eea; margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid #667eea; }
+                
+                .table-container { overflow-x: auto; margin-bottom: 2rem; }
+                .bom-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+                .bom-table th { background: #667eea; color: white; padding: 1rem 0.5rem; text-align: left; font-weight: 600; }
+                .bom-table td { padding: 0.75rem 0.5rem; border-bottom: 1px solid #e9ecef; }
+                .bom-table tbody tr:hover { background-color: #f8f9fa; }
+                
+                .image-cell { text-align: center; width: 80px; }
+                .part-thumbnail { max-width: 60px; max-height: 60px; object-fit: contain; border-radius: 4px; }
+                .no-image { width: 60px; height: 60px; background: #e9ecef; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.7rem; border-radius: 4px; margin: 0 auto; }
+                
+                .part-number { font-family: 'Courier New', monospace; font-weight: bold; color: #2c3e50; }
+                .part-name { font-weight: 500; }
+                .description { font-style: italic; color: #666; }
+                .quantity { text-align: center; font-weight: bold; }
+                .level { text-align: center; }
+                
+                .footer { background: #f8f9fa; padding: 1rem 2rem; text-align: center; color: #666; font-size: 0.9rem; }
+                
+                @media (max-width: 768px) {
+                    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+                    .metadata-grid { grid-template-columns: 1fr; }
+                    .bom-table { font-size: 0.9rem; }
+                }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔩 Industrial Control Unit - Bill of Materials</h1>
+            <div class="metadata">
+                <div class="metadata-grid">
+                    <div><strong>Project:</strong> Industrial_Control_Unit</div>
+                    <div><strong>Company:</strong> ÜRTM Takip Manufacturing</div>
+                    <div><strong>Revision:</strong> Rev-A</div>
+                    <div><strong>Generated:</strong> 2025-09-07 14:10:49</div>
+                    <div><strong>Source File:</strong> industrial_control_unit.step</div>
+                    <div><strong>Generator:</strong> STEP BOM Analyzer v2.0</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistics -->
+        <div class="statistics">
+            <h2>📊 Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Total Items</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Unique Parts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Assemblies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Max Level</div>
+                </div>
+            </div>
+            
+            <div class="category-stats">
+                <h3>Parts by Category</h3>
+                <div class="category-grid"><div class="category-item"><span class="category-name">Structural</span><span class="category-count">1</span></div><div class="category-item"><span class="category-name">Covers</span><span class="category-count">1</span></div><div class="category-item"><span class="category-name">Fasteners</span><span class="category-count">2</span></div><div class="category-item"><span class="category-name">Seals</span><span class="category-count">1</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="bom-section">
+            <h2>📋 Bill of Materials</h2><h3 class="group-header">📦 Structural</h3>
+            <div class="table-container">
+                <table class="bom-table">
+                    <thead>
+                        <tr><th>Part Number</th><th>Part Name</th><th>Description</th><th>Qty</th><th>Type</th><th>Volume (mm³)</th><th>Surface Area (mm²)</th><th>Level</th><th>Assembly Path</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr><td class="part-number">HOUSING_001</td><td class="part-name">Main Housing</td><td class="description">Primary structural housing component made of aluminum</td><td class="quantity">1</td><td class="shape-type">Solid</td><td class="volume">2500.50</td><td class="surface-area">850.20</td><td class="level">1</td><td class="assembly-path">Main_Assembly/Housing</td></tr>
+                    </tbody>
+                </table>
+            </div><h3 class="group-header">📦 Covers</h3>
+            <div class="table-container">
+                <table class="bom-table">
+                    <thead>
+                        <tr><th>Part Number</th><th>Part Name</th><th>Description</th><th>Qty</th><th>Type</th><th>Volume (mm³)</th><th>Surface Area (mm²)</th><th>Level</th><th>Assembly Path</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr><td class="part-number">COVER_002</td><td class="part-name">Top Cover</td><td class="description">Protective top cover with ventilation holes</td><td class="quantity">1</td><td class="shape-type">Shell</td><td class="volume">125.30</td><td class="surface-area">280.70</td><td class="level">1</td><td class="assembly-path">Main_Assembly/Cover</td></tr>
+                    </tbody>
+                </table>
+            </div><h3 class="group-header">📦 Fasteners</h3>
+            <div class="table-container">
+                <table class="bom-table">
+                    <thead>
+                        <tr><th>Part Number</th><th>Part Name</th><th>Description</th><th>Qty</th><th>Type</th><th>Volume (mm³)</th><th>Surface Area (mm²)</th><th>Level</th><th>Assembly Path</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr><td class="part-number">BRACKET_003</td><td class="part-name">Mounting Bracket</td><td class="description">Steel mounting bracket for wall installation</td><td class="quantity">2</td><td class="shape-type">Solid</td><td class="volume">75.80</td><td class="surface-area">156.40</td><td class="level">2</td><td class="assembly-path">Main_Assembly/Mounting_System/Bracket</td></tr><tr><td class="part-number">SCREW_005</td><td class="part-name">Machine Screw M6x20</td><td class="description">Stainless steel machine screw</td><td class="quantity">8</td><td class="shape-type">Solid</td><td class="volume">2.10</td><td class="surface-area">12.80</td><td class="level">2</td><td class="assembly-path">Main_Assembly/Fasteners/Screws</td></tr>
+                    </tbody>
+                </table>
+            </div><h3 class="group-header">📦 Seals</h3>
+            <div class="table-container">
+                <table class="bom-table">
+                    <thead>
+                        <tr><th>Part Number</th><th>Part Name</th><th>Description</th><th>Qty</th><th>Type</th><th>Volume (mm³)</th><th>Surface Area (mm²)</th><th>Level</th><th>Assembly Path</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr><td class="part-number">GASKET_004</td><td class="part-name">Sealing Gasket</td><td class="description">Rubber gasket for weatherproofing</td><td class="quantity">1</td><td class="shape-type">Face</td><td class="volume">15.20</td><td class="surface-area">85.60</td><td class="level">1</td><td class="assembly-path">Main_Assembly/Gasket</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Generated by STEP BOM Analyzer v2.0 | ÜRTM Takip System</p>
+            <p>Report generated on 2025-09-07 14:10:49</p>
+        </div>
+    </div>
+</body>
+</html>

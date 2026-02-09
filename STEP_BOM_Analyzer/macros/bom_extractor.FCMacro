@@ -1,0 +1,427 @@
+# -*- coding: utf-8 -*-
+"""
+STEP BOM Analyzer - BOM Extractor Macro
+FreeCAD Native Macro for hierarchical BOM extraction
+
+This macro handles:
+- FreeCAD Document traversal
+- Hierarchical BOM structure extraction
+- Part categorization and counting
+- Assembly relationship mapping
+- Multi-format BOM export (JSON, Excel, CSV)
+"""
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import os
+import json
+import csv
+from datetime import datetime
+from collections import defaultdict
+import sys
+
+# Macro Information
+__title__ = "STEP BOM Analyzer - BOM Extractor"
+__author__ = "ÜRTM Takip Ekibi" 
+__version__ = "3.0.0"
+__date__ = "2025-09-07"
+
+def log_message(message, level="INFO"):
+    """FreeCAD Console'a mesaj yaz"""
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    formatted_msg = f"[{timestamp}] BOM_EXTRACTOR - {level}: {message}"
+    
+    if level == "ERROR":
+        App.Console.PrintError(formatted_msg + "\n")
+    elif level == "WARNING": 
+        App.Console.PrintWarning(formatted_msg + "\n")
+    else:
+        App.Console.PrintMessage(formatted_msg + "\n")
+
+class BOMItem:
+    """BOM item representation"""
+    
+    def __init__(self, obj, level=0, parent=None):
+        self.obj = obj
+        self.level = level
+        self.parent = parent
+        self.children = []
+        self.quantity = 1
+        self.item_type = self._determine_type()
+        self.properties = self._extract_properties()
+    
+    def _determine_type(self):
+        """Nesne tipini belirle (Assembly/Part)"""
+        if hasattr(self.obj, 'OutList') and len(self.obj.OutList) > 0:
+            return "Assembly"
+        elif hasattr(self.obj, 'TypeId'):
+            type_id = self.obj.TypeId
+            if 'Assembly' in type_id or 'Group' in type_id:
+                return "Assembly"
+        return "Part"
+    
+    def _extract_properties(self):
+        """Nesne özelliklerini çıkar"""
+        props = {
+            "name": getattr(self.obj, 'Name', 'Unknown'),
+            "label": getattr(self.obj, 'Label', ''),
+            "type_id": getattr(self.obj, 'TypeId', ''),
+            "level": self.level,
+            "item_type": self.item_type,
+            "quantity": self.quantity
+        }
+        
+        # Shape özellikleri (eğer varsa)
+        if hasattr(self.obj, 'Shape') and self.obj.Shape:
+            try:
+                shape = self.obj.Shape
+                props.update({
+                    "has_geometry": True,
+                    "shape_type": str(getattr(shape, 'ShapeType', 'Unknown')),
+                    "volume": float(getattr(shape, 'Volume', 0)),
+                    "surface_area": float(getattr(shape, 'Area', 0)),
+                    "mass": float(getattr(shape, 'Mass', 0))
+                })
+                
+                # Bounding box
+                if hasattr(shape, 'BoundBox'):
+                    bbox = shape.BoundBox
+                    props["dimensions"] = {
+                        "length": float(bbox.XMax - bbox.XMin),
+                        "width": float(bbox.YMax - bbox.YMin), 
+                        "height": float(bbox.ZMax - bbox.ZMin)
+                    }
+                
+            except Exception as e:
+                log_message(f"Shape analiz hatası ({props['name']}): {str(e)}", "WARNING")
+                props["has_geometry"] = False
+        else:
+            props["has_geometry"] = False
+        
+        return props
+    
+    def add_child(self, child_item):
+        """Alt item ekle"""
+        self.children.append(child_item)
+        child_item.parent = self
+    
+    def to_dict(self):
+        """Dict representation"""
+        data = self.properties.copy()
+        data["children"] = [child.to_dict() for child in self.children]
+        data["child_count"] = len(self.children)
+        return data
+
+class HierarchicalBOMExtractor:
+    """Hierarchical BOM extraction engine"""
+    
+    def __init__(self, document=None):
+        self.document = document or App.ActiveDocument
+        self.bom_items = []
+        self.part_registry = defaultdict(int)  # Part sayımı için
+        self.assembly_registry = defaultdict(int)  # Assembly sayımı için
+        
+        if not self.document:
+            raise RuntimeError("Aktif FreeCAD dokümantı bulunamadı")
+    
+    def extract_bom_hierarchy(self):
+        """Hiyerarşik BOM yapısını çıkar"""
+        log_message("Hiyerarşik BOM çıkarma başlatılıyor...")
+        
+        try:
+            # Root level nesneleri bul
+            root_objects = self._find_root_objects()
+            log_message(f"Root seviyesinde {len(root_objects)} nesne bulundu")
+            
+            # Her root nesne için hiyerarşi oluştur
+            for obj in root_objects:
+                bom_item = self._build_hierarchy(obj, level=0)
+                if bom_item:
+                    self.bom_items.append(bom_item)
+            
+            # Part sayımını yap
+            self._calculate_quantities()
+            
+            log_message(f"BOM çıkarma tamamlandı: {len(self.bom_items)} ana item")
+            return self.bom_items
+            
+        except Exception as e:
+            log_message(f"BOM çıkarma hatası: {str(e)}", "ERROR")
+            return []
+    
+    def _find_root_objects(self):
+        """Root seviye nesneleri bul (parent'ı olmayan)"""
+        all_objects = set(self.document.Objects)
+        child_objects = set()
+        
+        # Tüm child nesneleri bul
+        for obj in self.document.Objects:
+            if hasattr(obj, 'OutList'):
+                child_objects.update(obj.OutList)
+        
+        # Root nesneler = Tüm nesneler - Child nesneler
+        root_objects = all_objects - child_objects
+        return list(root_objects)
+    
+    def _build_hierarchy(self, obj, level=0, visited=None):
+        """Bir nesne için hiyerarşi oluştur"""
+        if visited is None:
+            visited = set()
+        
+        # Circular reference kontrolü
+        if obj in visited:
+            log_message(f"Circular reference tespit edildi: {obj.Name}", "WARNING")
+            return None
+        
+        visited.add(obj)
+        
+        try:
+            # BOM item oluştur
+            bom_item = BOMItem(obj, level)
+            
+            # Part/Assembly sayımı
+            if bom_item.item_type == "Assembly":
+                self.assembly_registry[obj.Name] += 1
+            else:
+                self.part_registry[obj.Name] += 1
+            
+            # Child nesneleri işle
+            if hasattr(obj, 'OutList') and obj.OutList:
+                log_message(f"{'  ' * level}├─ {obj.Name} ({len(obj.OutList)} child)")
+                
+                for child_obj in obj.OutList:
+                    child_item = self._build_hierarchy(child_obj, level + 1, visited.copy())
+                    if child_item:
+                        bom_item.add_child(child_item)
+            else:
+                log_message(f"{'  ' * level}└─ {obj.Name} (leaf node)")
+            
+            return bom_item
+            
+        except Exception as e:
+            log_message(f"Hiyerarşi oluşturma hatası ({obj.Name}): {str(e)}", "WARNING")
+            return None
+    
+    def _calculate_quantities(self):
+        """Part sayımlarını hesapla"""
+        log_message("Part quantity hesaplaması yapılıyor...")
+        
+        # Her BOM item için quantity güncelle
+        for item in self.bom_items:
+            self._update_quantities_recursive(item)
+    
+    def _update_quantities_recursive(self, item):
+        """Recursive quantity güncelleme"""
+        # Kendi quantity'sini güncelle
+        if item.item_type == "Part":
+            item.quantity = self.part_registry.get(item.obj.Name, 1)
+        else:
+            item.quantity = self.assembly_registry.get(item.obj.Name, 1)
+        
+        # Properties'i güncelle
+        item.properties["quantity"] = item.quantity
+        
+        # Children için recursive çağrı
+        for child in item.children:
+            self._update_quantities_recursive(child)
+    
+    def generate_bom_statistics(self):
+        """BOM istatistikleri oluştur"""
+        stats = {
+            "total_items": len(self.bom_items),
+            "total_parts": sum(self.part_registry.values()),
+            "total_assemblies": sum(self.assembly_registry.values()),
+            "unique_parts": len(self.part_registry),
+            "unique_assemblies": len(self.assembly_registry),
+            "max_hierarchy_depth": self._calculate_max_depth(),
+            "part_breakdown": dict(self.part_registry),
+            "assembly_breakdown": dict(self.assembly_registry)
+        }
+        
+        return stats
+    
+    def _calculate_max_depth(self):
+        """Maksimum hiyerarşi derinliği hesapla"""
+        max_depth = 0
+        
+        def get_depth(item):
+            if not item.children:
+                return item.level
+            return max(get_depth(child) for child in item.children)
+        
+        for item in self.bom_items:
+            depth = get_depth(item)
+            max_depth = max(max_depth, depth)
+        
+        return max_depth
+    
+    def export_to_json(self, output_path):
+        """JSON formatında export"""
+        try:
+            bom_data = {
+                "metadata": {
+                    "generated_by": "STEP BOM Analyzer v3.0",
+                    "freecad_version": App.Version(),
+                    "document_name": self.document.Name,
+                    "generation_date": datetime.now().isoformat(),
+                },
+                "statistics": self.generate_bom_statistics(),
+                "bom_structure": [item.to_dict() for item in self.bom_items]
+            }
+            
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(bom_data, f, indent=2, ensure_ascii=False, default=str)
+            
+            log_message(f"JSON BOM export edildi: {output_path}")
+            return True
+            
+        except Exception as e:
+            log_message(f"JSON export hatası: {str(e)}", "ERROR")
+            return False
+    
+    def export_to_csv(self, output_path):
+        """CSV formatında flat BOM export"""
+        try:
+            with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
+                writer = csv.writer(csvfile)
+                
+                # Header
+                headers = [
+                    'Level', 'Item_Type', 'Name', 'Label', 'Quantity', 
+                    'Has_Geometry', 'Volume', 'Surface_Area', 'Mass',
+                    'Length', 'Width', 'Height', 'Parent'
+                ]
+                writer.writerow(headers)
+                
+                # Data rows
+                self._write_csv_recursive(writer, self.bom_items)
+            
+            log_message(f"CSV BOM export edildi: {output_path}")
+            return True
+            
+        except Exception as e:
+            log_message(f"CSV export hatası: {str(e)}", "ERROR") 
+            return False
+    
+    def _write_csv_recursive(self, writer, items, parent_name=""):
+        """CSV için recursive yazma"""
+        for item in items:
+            props = item.properties
+            
+            # Dimensions
+            dims = props.get('dimensions', {})
+            
+            row = [
+                props.get('level', 0),
+                props.get('item_type', ''),
+                props.get('name', ''),
+                props.get('label', ''),
+                props.get('quantity', 1),
+                props.get('has_geometry', False),
+                props.get('volume', 0),
+                props.get('surface_area', 0),
+                props.get('mass', 0),
+                dims.get('length', 0),
+                dims.get('width', 0),
+                dims.get('height', 0),
+                parent_name
+            ]
+            
+            writer.writerow(row)
+            
+            # Children için recursive çağrı
+            if item.children:
+                self._write_csv_recursive(writer, item.children, props.get('name', ''))
+
+def extract_bom_from_document(output_dir, export_formats=None):
+    """Ana BOM çıkarma fonksiyonu"""
+    if export_formats is None:
+        export_formats = ['json', 'csv']
+    
+    log_message("=" * 60)
+    log_message("STEP BOM Analyzer - BOM Extraction")
+    log_message("=" * 60)
+    
+    try:
+        # Output dizini oluştur
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # BOM extractor oluştur
+        extractor = HierarchicalBOMExtractor()
+        
+        # BOM hiyerarşisini çıkar
+        bom_items = extractor.extract_bom_hierarchy()
+        
+        if not bom_items:
+            log_message("BOM çıkarma işlemi başarısız", "ERROR")
+            return {"success": False, "error": "No BOM items extracted"}
+        
+        # İstatistikleri hesapla
+        stats = extractor.generate_bom_statistics()
+        log_message(f"📊 BOM İstatistikleri:")
+        log_message(f"   • Toplam Item: {stats['total_items']}")
+        log_message(f"   • Toplam Part: {stats['total_parts']} ({stats['unique_parts']} unique)")
+        log_message(f"   • Toplam Assembly: {stats['total_assemblies']} ({stats['unique_assemblies']} unique)")
+        log_message(f"   • Maksimum Derinlik: {stats['max_hierarchy_depth']}")
+        
+        # Export işlemleri
+        export_results = {}
+        
+        if 'json' in export_formats:
+            json_path = os.path.join(output_dir, "hierarchical_bom.json")
+            export_results['json'] = extractor.export_to_json(json_path)
+        
+        if 'csv' in export_formats:
+            csv_path = os.path.join(output_dir, "flat_bom.csv")
+            export_results['csv'] = extractor.export_to_csv(csv_path)
+        
+        log_message("=" * 60)
+        log_message("BOM EXTRACTION COMPLETED SUCCESSFULLY!")
+        log_message("=" * 60)
+        
+        return {
+            "success": True,
+            "statistics": stats,
+            "export_results": export_results,
+            "bom_items_count": len(bom_items)
+        }
+        
+    except Exception as e:
+        log_message(f"BOM çıkarma genel hatası: {str(e)}", "ERROR")
+        return {"success": False, "error": str(e)}
+
+# Ana macro fonksiyonu
+def main():
+    """Ana BOM extractor fonksiyonu"""
+    
+    # Test parametreleri
+    test_output_dir = r"C:\temp\bom_output"
+    
+    # Parametreler (macro manager'dan gelecek)
+    if 'MACRO_PARAMETERS' in globals():
+        params = globals()['MACRO_PARAMETERS']
+        output_dir = params.get('output_directory', test_output_dir)
+        export_formats = params.get('export_formats', ['json', 'csv'])
+    else:
+        output_dir = test_output_dir
+        export_formats = ['json', 'csv']
+        log_message("Test modunda çalışıyor - gerçek parametreleri bekliyor")
+    
+    # BOM çıkarma
+    result = extract_bom_from_document(output_dir, export_formats)
+    
+    # Sonucu yazdır
+    if result["success"]:
+        log_message("✅ BOM Extraction tamamlandı!")
+        print("BOM_EXTRACTION_SUCCESS")
+        print("BOM_EXTRACTION_DATA_START")
+        print(json.dumps(result, indent=2, default=str))
+        print("BOM_EXTRACTION_DATA_END")
+    else:
+        log_message(f"❌ BOM Extraction hatası: {result['error']}", "ERROR")
+    
+    return result
+
+# FreeCAD Macro olarak çalıştırıldığında
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,20 @@
+[Unit]
+Description=URTM Takip Production Service
+After=network.target
+StartLimitInterval=0
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/urtmtakip
+ExecStart=/usr/bin/node backend/src/server.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=urtmtakip
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target

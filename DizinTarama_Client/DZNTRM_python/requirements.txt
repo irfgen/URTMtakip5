@@ -1,0 +1,32 @@
+# ÜRTM Takip - Dizin Tarama Client v1.2.4 Gereksinimleri
+# Python 3.8+ gereklidir
+
+# Core Dependencies
+# HTTP istekleri için
+requests>=2.25.0
+
+# Image Processing (v1.2.4+ için kritik)
+# PIL/Pillow for image handling - RESİM GÖSTERİM İÇİN ZORUNLU
+Pillow>=9.0.0
+
+# Note: PIL/Pillow kurulumu için install_pillow.bat script'ini kullanın
+# Windows: install_pillow.bat
+# Manuel: pip install Pillow
+
+# GUI Framework (genellikle Python ile birlikte gelir)
+# tkinter - Windows Python ile birlikte gelir, Linux için python3-tk paket gerekebilir
+
+# Built-in modules (kurulum gerektirmez):
+# - json (JSON handling)
+# - configparser (INI configuration files)
+# - pathlib (Modern path handling)
+# - threading (Multi-threading support)
+# - logging (Logging framework)
+# - datetime (Date/time operations)
+# - queue (Thread-safe queues)
+# - os, sys (System operations)
+# - time (Time operations)
+
+# Development/Testing (opsiyonel)
+# pytest>=6.0.0
+# pytest-mock>=3.6.0

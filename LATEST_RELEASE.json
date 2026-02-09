@@ -1,0 +1,32 @@
+{
+  "current_version": "1.2.4",
+  "current_version_full": "1.2.4.20251003002",
+  "release_date": "2025-10-03",
+  "build_timestamp": 1759518584,
+  "downloads": {
+    "windows": {
+      "file": "URTM_DizinTarama_Client_v1.2.4.zip",
+      "size": 197607,
+      "format": "ZIP",
+      "recommended": true
+    },
+    "linux": {
+      "file": "URTM_DizinTarama_Client_v1.2.4.tar.gz",
+      "size": 185021,
+      "format": "TAR.GZ",
+      "recommended": false
+    }
+  },
+  "changelog_highlight": [
+    "Checkbox part selection system",
+    "Database integration with part details",
+    "Enhanced UI with scrollable part cards",
+    "Real-time database status indicators"
+  ],
+  "system_requirements": {
+    "os": "Windows 10/11, Linux (Ubuntu 18.04+)",
+    "python": "3.8 or higher",
+    "ram": "512MB minimum",
+    "disk_space": "50MB"
+  }
+}

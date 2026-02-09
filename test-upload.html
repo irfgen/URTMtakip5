@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Upload Test</title>
+</head>
+<body>
+    <h1>Excel Upload Test</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="excel" accept=".xlsx,.xls" required>
+        <button type="submit">Upload</button>
+    </form>
+    
+    <div style="margin: 10px 0;">
+        <button onclick="testCorrectFile()">Test Correct Format Excel</button>
+    </div>
+    
+    <div id="result"></div>
+
+    <script>
+        async function testCorrectFile() {
+            try {
+                const response = await fetch('/test-teklif-import-correct.xlsx');
+                const blob = await response.blob();
+                const file = new File([blob], 'test-teklif-import-correct.xlsx', {
+                    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                });
+                
+                const formData = new FormData();
+                formData.append('excel', file);
+                
+                console.log('Testing correct format file...');
+                const uploadResponse = await fetch('http://localhost:3001/api/fason/teklifler/upload-excel', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                console.log('Response status:', uploadResponse.status);
+                const data = await uploadResponse.json();
+                console.log('Response data:', data);
+                
+                document.getElementById('result').innerHTML = 
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                    
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = 
+                    '<div style="color: red;">Error: ' + error.message + '</div>';
+            }
+        }
+        
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            const fileInput = document.getElementById('fileInput');
+            formData.append('excel', fileInput.files[0]);
+            
+            try {
+                console.log('Uploading file...');
+                const response = await fetch('http://localhost:3001/api/fason/teklifler/upload-excel', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                console.log('Response status:', response.status);
+                const data = await response.json();
+                console.log('Response data:', data);
+                
+                document.getElementById('result').innerHTML = 
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                    
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = 
+                    '<div style="color: red;">Error: ' + error.message + '</div>';
+            }
+        });
+    </script>
+</body>
+</html>

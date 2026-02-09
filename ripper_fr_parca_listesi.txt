@@ -1,0 +1,3451 @@
+=== RIPPER_FR PARÇA LİSTESİ VE DOSYA GRUPLANDıRMASı ===
+Oluşturulma Tarihi: 2025-09-17 15:34:50
+SMB Paylaşım: //192.168.1.86/mzk makineler/KAPI_EBATLAMA_MAKINELERI/RIPPER_SERI_MAKINELER/RIPPER_FR
+IPTAL klasörleri hariç tutulmuştur.
+
+=== ÖZET ===
+Toplam Parça Sayısı: 413
+Toplam SLDPRT Dosyası: 383
+Toplam SLDDRW Dosyası: 162
+Toplam PDF Dosyası: 24
+Toplam Dosya: 569
+
+=== PARÇA BAZLI GRUPLAMA ===
+
+📦 PARÇA: 000-IT7100E 3D drawing
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/OTOMASYON_URUNLERI/000-IT7100E 3D drawing.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 1205861_AMTE-M-LH-G14
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/1205861_AMTE-M-LH-G14.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 1463770 DSBC-50-30-PPVA_(Z_0)
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/1463770 DSBC-50-30-PPVA_(Z_0).SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 1463770 DSBC-50-30_(K)
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/1463770 DSBC-50-30_(K).SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 15.05.2025
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/15.05.2025.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 153026_QSF-1_4-8-B
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/153026_QSF-1_4-8-B.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 186120_QSL-G1_4-8
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/186120_QSL-G1_4-8.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 186161_QST-G1_4-8
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/186161_QST-G1_4-8.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 250 mm STROKE 8-18
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/250 mm STROKE 8-18.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 250 mm STROKE BORU
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/250 mm STROKE BORU.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 2601 0462 0001
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Datasheets/2601 0462 0001.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 2601 0462 0001 AL
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/2601 0462 0001/2601 0462 0001 AL.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 2601 0462 0001 IL
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/2601 0462 0001/2601 0462 0001 IL.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 2601 0462 0001 RT
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/2601 0462 0001/2601 0462 0001 RT.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 30.04.25_KS_1900
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/30.04.25_KS_1900.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 33892_LNG-50
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/33892_LNG-50.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 3569_B-1_4
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/3569_B-1_4.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 40430034
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/40430034.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/40430034.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 40430034_C001
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/40430034_C001.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 40430034_C002
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/40430034_C002.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 526489 MS4-LFR-1_4-D7-E-R-M-AS-1D_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/526489 MS4-LFR-1_4-D7-E-R-M-AS-1D_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 526489 MS4-LFR-M_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/526489 MS4-LFR-M_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 527703 MS4-FRM-1_4-AD7-1s_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/527703 MS4-FRM-1_4-AD7-1s_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 531666_KS3-1_4-A
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/531666_KS3-1_4-A.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 541266 MS4-EM1-1_4-1D_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/541266 MS4-EM1-1_4-1D_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6003.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6004.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6007-2RSR
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6007-2RSR.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 608
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/608.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 60x60_YMENTESE_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/60x60_YMENTESE_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 60x60_YMENTESE_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/60x60_YMENTESE_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6203
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6203.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6204
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/6204.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 6F-L-2
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/6F-L-2.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 702025 MS4-SD5-D10-O-P-M8 AD7_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/702025 MS4-SD5-D10-O-P-M8 AD7_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 79-493-1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/79-493-1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 79-493-2
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/79-493-2.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 79-493-3
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/79-493-3.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 79-493-5
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/79-493-5.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 79-493-7
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/79-493-7.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 8-18 BO_AZ YATA_I
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/8-18 BO_AZ YATA_I.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 8-18 P_STON
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/8-18 P_STON.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 8092760 MS4-MV-B---(42.7_high_m)_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/8092760 MS4-MV-B---(42.7_high_m)_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: 8140202 MS4-WP1---(00wp)_1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/8140202 MS4-WP1---(00wp)_1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DA09S-02-X-X-X-20-S-A-X-OAD-OZP-X-X
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DA09S-02-X-X-X-20-S-A-X-OAD-OZP-X-X.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DA09S-04-X-X-X-20-S-A-X-OAD-OZP-X-X
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DA09S-04-X-X-X-20-S-A-X-OAD-OZP-X-X.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DBB1510
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DBB1510.SLDPRT
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Datasheets/DBB1510.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DBB2525
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DBB2525.SLDPRT
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Datasheets/DBB2525.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DBB3012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DBB3012.SLDPRT
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Datasheets/DBB3012.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 6885 A 4 x 4 x 10
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN 6885 A 4 x 4 x 10.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 6885 A 4 x 4 x 12
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN 6885 A 4 x 4 x 12.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 808-25-B12-56-EG (0-1)-egl
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN808-25-B12-56-EG/DIN 808-25-B12-56-EG (0-1)-egl.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 808-25-B12-56-EG (0-1)-egr
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN808-25-B12-56-EG/DIN 808-25-B12-56-EG (0-1)-egr.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 808-25-B12-56-EG-egm
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN808-25-B12-56-EG/DIN 808-25-B12-56-EG-egm.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN 808-42-K20-128-DG-NI
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/DIN 808-42-K20-128-DG-NI.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/DIN 808-42-K20-128-DG-NI.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN-439-B - M16x1.5(F)
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/PNOMATIK/FESTO/DIN-439-B - M16x1.5(F).SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_10
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_10.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_12
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_12.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_15
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_15.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_17
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_17.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_25
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_25.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_30
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_30.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN471_35
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN471_35.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN472_32
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN472_32.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN472_42
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN472_42.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN472_47
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN472_47.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN472_62
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN472_62.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN6885_st_steel_4x4x16
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN6885_st_steel_4x4x16.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN808-25-B12-56-EG
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN808-25-B12-56-EG/DIN808-25-B12-56-EG.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN934_M12
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN934_M12.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN934_M30
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN934_M30.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN934_M6
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN934_M6.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: DIN934_M8
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/DIN934_M8.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: EN_040_0_0_A-B07_B14_ML10A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/REDUKTORLER/EN_040_0_0_A-B07_B14_ML10A_0_0_0_0_0_0_0_0_0_0_0_0_M1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ERX-p Ayarlanabilir kollar _ Elesa+Ganter
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/ERX-p Ayarlanabilir kollar _ Elesa+Ganter.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ERX_44_p-M6x30-C1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/ERX_44_p-M6x30-C1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ET_040_0_L_T00_T00_ML242A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/REDUKTORLER/ET_040_0_L_T00_T00_ML242A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ET_040_0_R_T00_T00_ML42A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/REDUKTORLER/ET_040_0_R_T00_T00_ML42A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ET_050_0_0_T00_T00_ML11A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/REDUKTORLER/ET_050_0_0_T00_T00_ML11A_0_0_0_0_0_0_0_0_0_0_0_0_M1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ET_050_0_0_T00_T00_ML211A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/REDUKTORLER/ET_050_0_0_T00_T00_ML211A_0_0_0_0_0_0_0_0_0_0_0_0_M1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: EYES-YC-Y019
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/EYES-YC-Y019.SLDPRT
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/EYES-YC-Y019.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: F19097
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/F19097.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/F19097.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/F19097.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: GN 31-80-M16-75-B2-T (0-0)
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/GN 31-80-M16-75-B2-T (0-0).SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: GN 31-T_TK Dengeleme ayağı _ Elesa+Ganter
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/GN 31-T_TK Dengeleme ayağı _ Elesa+Ganter.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HM110.12_ER40S_CK_CR_CCW
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CCW.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CCW.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CCW.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HM110.12_ER40S_CK_CR_CW
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CW.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CW.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/HM110.12_ER40S_CK_CR_CW.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HPC - RTE-GG-38 19_25
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Datasheets/HPC - RTE-GG-38 19_25.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HSR15R1SS_DAR_TIP_ARABA
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/HSR15R1SS_DAR_TIP_ARABA.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HSR20LR1SS
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/HSR20LR1SS.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HSR20R1SS_DAR_TIP_ARABA
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/HSR20R1SS_DAR_TIP_ARABA.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: HSR35C1SSM
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/HSR35C1SSM.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: KFD4934
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/KFD4934.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: KFD4936
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TAKIMLAR/KFD4936.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: LPM soket vidas_
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/LPM soket vidas_.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Latch_GN_115-SC-20__1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/Latch_GN_115-SC-20__1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Latch_GN_115-SC-40__1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/PARTserver0202505221506374604030810e898ce/Latch_GN_115-SC-40__1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: M6 FEMALE JOINT
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/M6 FEMALE JOINT.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: M6 MALE JOINT
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/M6 MALE JOINT.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: M6 Somun
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/M6 Somun.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: MESAN_ELCEK_274.2.15
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/MESAN_ELCEK_274.2.15.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: OSKAR_308_GIZLI_MENTESE_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/OSKAR_308_GIZLI_MENTESE_001.sldprt
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Plastik rondela
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/Plastik rondela.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_05.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_06.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_07
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_07.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_08
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_08.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_09
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_09.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_10
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_10.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_11
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_11.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_12
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_12.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_13
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_13.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_14
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_14.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_15
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_15.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_16
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_16.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_17
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_17.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_17.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_18
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_18.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_19
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_19.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_20
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_20.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_002_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002_01.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002_01.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_002_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_002_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_005.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_005_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_005_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_005_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_005_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_005_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_005_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_005_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_005_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_006_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_006_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_02.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_02.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_006_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_006_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_007.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_007_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_007_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_007_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_010
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_010.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_010.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_013
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_013.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_014
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_014.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_015
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_015.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_016
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_016.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_016.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_017
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_017.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_017.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GVD_018
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_018.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GOVDE_GRUP/R532_GVD_018.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_02.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_02.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_001_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_05.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_001_05.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_004_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_004_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_004_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_004_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_004_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_006_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_006_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_006_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_04.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_04.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_05.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_05.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_06.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_007_07
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_07.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_007_07.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_009-01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009-01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_009_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_009_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009_02.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_009_02.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_010
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_010.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_010.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_010_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_010_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_010_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_011_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_011_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_011_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_04-
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_04-.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_05.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_05.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_012_10
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_012_10.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_013
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_013.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_013.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_013_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_013_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_013_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_013_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_014
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_014.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_014.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_015
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_015.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_015.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_GYD_016
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_GYD_016.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_02.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_02.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_04.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_04.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_05.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_05.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_06.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_07
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_07.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_07.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_001_08
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_08.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_001_08.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_003_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_003_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_003_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_PAN_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_GIYDIRME_GRUBU/R532_PANO_GRUBU/R532_PAN_004.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_05.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_06.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_07
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_07.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_002_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_002_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_004_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_004_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: R532_UBS_090
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/R532/R532_UST_BASKI_GRUBU/R532_UBS_090.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_001.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_001.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_013
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_013.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_014
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_014.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_014.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_AYR_015
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_AYAR_GRUBU/RFRO_AYR_015.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_05.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_06.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_07
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_07.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_003_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_003_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_BSP_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_BESLEME_SEHPASI_GRUBU/RFRO_BSP_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_002_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_002_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_002_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_002_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_003.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_005.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_005_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_005_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF1_005_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_1_GRUBU/RFRO_DF1_005_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_002_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_002_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_002_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_002_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_002_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_002_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_003.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_003_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_003_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_003_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_003_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_004.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_007.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_007_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_007_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_007_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_007_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_DF2_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_DIK_FREZE_2_GRUBU/RFRO_DF2_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_003.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_005.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_005_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_005_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_005_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_005_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_006.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_006_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_006_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_PL1_006_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_PLANYA_1_GRUBU/RFRO_PL1_006_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_001.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_001.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_010
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_010.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_010.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_013
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_013.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_013.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_014
+  🔧 3D Çizim Dosyaları (2 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_FIKSTUR_GRUBU/RFRO_SLN_014.SLDPRT
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_014.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SALINCAK_GRUBU/RFRO_SLN_014.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_015
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_FIKSTUR_GRUBU/RFRO_SLN_015.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_016
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_FIKSTUR_GRUBU/RFRO_SLN_016.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_017
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_FIKSTUR_GRUBU/RFRO_SLN_017.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SLN_018
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_FIKSTUR_GRUBU/RFRO_SLN_018.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_002.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_002.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_005_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_005_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_005_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_009.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_009.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_010
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_010.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_010.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_SPR_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_SIPER_GRUP/RFRO_SPR_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001_01.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001_01.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_001_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_001_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_02.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_02.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_03.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_03.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_003_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_003_05.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_TZE_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_TOZ_EMME_GRUBU/RFRO_TZE_004.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_001
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_001.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_001_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_001_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_001_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_001_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_001_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_001_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_03
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_03.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_04
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_04.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_05
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_05.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_06
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_06.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_06.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_002_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_002_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_003
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_003.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_003_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_003_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_003_02
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_003_02.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_003_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_003_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_004
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_004.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_004.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_005
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_005.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_005.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_006.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_006.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_007
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_007.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_007.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_008
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_008.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_008.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_009
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_009.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_009_01
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_009_01.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_009_M01
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_009_M01.SLDDRW
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_010
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_010.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_010.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_011
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_011.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_011.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_012
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_012.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_012.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_013
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_013.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_013.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_014
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_014.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_014.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_015
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_015.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_015.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_016
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_016.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_016.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_017
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_017.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_017.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_018
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_018.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_018.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RFRO_UBS_019
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_019.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_ORTAK_GRUPLAR/RFRO_UST_BASKI_GRUBU/RFRO_UBS_019.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: RUBY PROFiL
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/RUBY PROFiL.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Schenider_XB7NA8442
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/OTOMASYON_URUNLERI/Schenider_XB7NA8442.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc2
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc2.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgl
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgl.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgr
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgr.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI-dgm
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/DIN 808-42-K20-128-DG-NI/Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI-dgm.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: T-MOTION - CA.250.550
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/TEKNIK_HIRDAVAT/T-MOTION - CA.250.550.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: T08536
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T08536.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T08536.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T08536.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: T12941
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T12941.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T12941.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/T12941.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Trapezoidal Lead Nut GN 103.1-20x4-LH-RG
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-20x4-LH-RG.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-20x4-LH-RG.SLDDRW
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Trapezoidal Lead Nut GN 103.1-20x4-RH-RG
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-20x4-RH-RG.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: Trapezoidal Lead Nut GN 103.1-30x6-RH-RG
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-30x6-RH-RG.SLDPRT
+  📐 Teknik Resim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-30x6-RH-RG.SLDDRW
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/Trapezoidal Lead Nut GN 103.1-30x6-RH-RG.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✓ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: WK-GS28-P19-P25-92-0
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/WK-GS28-P19-P25-92-0.SLDPRT
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/HAREKET_AKTARMA/WK-GS28-P19-P25-92-0.pdf
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: XEL071XXX-PC-A0-000
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/ELEKTRIK_MOTORLARI/XEL071XXX-PC-A0-000.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: XEL090XXX-FC-A0-000
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/ELEKTRIK_MOTORLARI/XEL090XXX-FC-A0-000.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: conta rtm
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/conta rtm.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: din_913-m8x40-45h
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/BAGLANTI_ELEMANLARI/din_913-m8x40-45h.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: hm-110-er-40-s
+  📄 PDF Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/SPINDLE_MOTORLAR/hm-110-er-40-s.pdf
+  📊 Durum: 3D Çizim ✗ | Teknik Resim ✗ | PDF ✓
+--------------------------------------------------------------------------------
+
+📦 PARÇA: lpm erkek soket
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/lpm erkek soket.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: lpm saket 1
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/lpm saket 1.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: lpm soket kapag_2
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/lpm soket kapag_2.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: lpm soket3
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/lpm soket3.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: mil kapa__
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/mil kapa__.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: mst mil
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/mst mil.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: soket contas_ 2
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/soket contas_ 2.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: vida rtm
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/vida rtm.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: yuvarlak soket kapa__
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/MEKATRONIK_URUNLER/yuvarlak soket kapa__.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+📦 PARÇA: ~$6006
+  🔧 3D Çizim Dosyaları (1 adet):
+    - /mnt/ripper_fr/RFR_STANDART_URUNLER/RULMANLAR/~$6006.SLDPRT
+  📊 Durum: 3D Çizim ✓ | Teknik Resim ✗ | PDF ✗
+--------------------------------------------------------------------------------
+
+=== EKSİK DOSYA ANALİZİ ===
+
+🚨 Teknik Resmi Eksik Parçalar (241 adet):
+  - 000-IT7100E 3D drawing
+  - 1205861_AMTE-M-LH-G14
+  - 1463770 DSBC-50-30-PPVA_(Z_0)
+  - 1463770 DSBC-50-30_(K)
+  - 15.05.2025
+  - 153026_QSF-1_4-8-B
+  - 186120_QSL-G1_4-8
+  - 186161_QST-G1_4-8
+  - 250 mm STROKE 8-18
+  - 250 mm STROKE BORU
+  - 2601 0462 0001 AL
+  - 2601 0462 0001 IL
+  - 2601 0462 0001 RT
+  - 30.04.25_KS_1900
+  - 33892_LNG-50
+  - 3569_B-1_4
+  - 526489 MS4-LFR-1_4-D7-E-R-M-AS-1D_1
+  - 526489 MS4-LFR-M_1
+  - 527703 MS4-FRM-1_4-AD7-1s_1
+  - 531666_KS3-1_4-A
+  - 541266 MS4-EM1-1_4-1D_1
+  - 6002
+  - 6003
+  - 6004
+  - 6007-2RSR
+  - 608
+  - 60x60_YMENTESE_001
+  - 60x60_YMENTESE_002
+  - 6203
+  - 6204
+  - 6F-L-2
+  - 702025 MS4-SD5-D10-O-P-M8 AD7_1
+  - 79-493-1
+  - 79-493-2
+  - 79-493-3
+  - 79-493-5
+  - 79-493-7
+  - 8-18 BO_AZ YATA_I
+  - 8-18 P_STON
+  - 8092760 MS4-MV-B---(42.7_high_m)_1
+  - 8140202 MS4-WP1---(00wp)_1
+  - DA09S-02-X-X-X-20-S-A-X-OAD-OZP-X-X
+  - DA09S-04-X-X-X-20-S-A-X-OAD-OZP-X-X
+  - DBB1510
+  - DBB2525
+  - DBB3012
+  - DIN 6885 A 4 x 4 x 10
+  - DIN 6885 A 4 x 4 x 12
+  - DIN 808-25-B12-56-EG (0-1)-egl
+  - DIN 808-25-B12-56-EG (0-1)-egr
+  - DIN 808-25-B12-56-EG-egm
+  - DIN-439-B - M16x1.5(F)
+  - DIN471_10
+  - DIN471_12
+  - DIN471_15
+  - DIN471_17
+  - DIN471_25
+  - DIN471_30
+  - DIN471_35
+  - DIN472_32
+  - DIN472_42
+  - DIN472_47
+  - DIN472_62
+  - DIN6885_st_steel_4x4x16
+  - DIN934_M12
+  - DIN934_M30
+  - DIN934_M6
+  - DIN934_M8
+  - EN_040_0_0_A-B07_B14_ML10A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ERX_44_p-M6x30-C1
+  - ET_040_0_L_T00_T00_ML242A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_040_0_R_T00_T00_ML42A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_050_0_0_T00_T00_ML11A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_050_0_0_T00_T00_ML211A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - EYES-YC-Y019
+  - GN 31-80-M16-75-B2-T (0-0)
+  - HSR15R1SS_DAR_TIP_ARABA
+  - HSR20LR1SS
+  - HSR20R1SS_DAR_TIP_ARABA
+  - HSR35C1SSM
+  - KFD4934
+  - KFD4936
+  - LPM soket vidas_
+  - Latch_GN_115-SC-20__1
+  - Latch_GN_115-SC-40__1
+  - M6 FEMALE JOINT
+  - M6 MALE JOINT
+  - M6 Somun
+  - MESAN_ELCEK_274.2.15
+  - OSKAR_308_GIZLI_MENTESE_001
+  - Plastik rondela
+  - R532_GVD_001
+  - R532_GVD_001_01
+  - R532_GVD_001_02
+  - R532_GVD_001_04
+  - R532_GVD_001_05
+  - R532_GVD_001_06
+  - R532_GVD_001_07
+  - R532_GVD_001_08
+  - R532_GVD_001_09
+  - R532_GVD_001_10
+  - R532_GVD_001_11
+  - R532_GVD_001_12
+  - R532_GVD_001_13
+  - R532_GVD_001_14
+  - R532_GVD_001_15
+  - R532_GVD_001_16
+  - R532_GVD_001_18
+  - R532_GVD_001_19
+  - R532_GVD_001_20
+  - R532_GVD_002_02
+  - R532_GVD_005
+  - R532_GVD_005_01
+  - R532_GVD_005_02
+  - R532_GVD_005_03
+  - R532_GVD_005_04
+  - R532_GVD_006
+  - R532_GVD_007
+  - R532_GVD_013
+  - R532_GVD_014
+  - R532_GVD_015
+  - R532_GYD_001_01
+  - R532_GYD_001_04
+  - R532_GYD_004_02
+  - R532_GYD_007_01
+  - R532_GYD_007_02
+  - R532_GYD_007_03
+  - R532_GYD_007_06
+  - R532_GYD_009-01
+  - R532_GYD_009_01
+  - R532_GYD_012_03
+  - R532_GYD_012_04
+  - R532_GYD_012_04-
+  - R532_GYD_012_10
+  - R532_GYD_013_01
+  - R532_GYD_013_02
+  - R532_GYD_016
+  - R532_PAN_001_06
+  - R532_PAN_004
+  - R532_UBS_001
+  - R532_UBS_001_01
+  - R532_UBS_002
+  - R532_UBS_002_01
+  - R532_UBS_002_02
+  - R532_UBS_002_03
+  - R532_UBS_002_04
+  - R532_UBS_002_05
+  - R532_UBS_002_06
+  - R532_UBS_002_07
+  - R532_UBS_004_01
+  - R532_UBS_090
+  - RFRO_AYR_013
+  - RFRO_AYR_015
+  - RFRO_BSP_001
+  - RFRO_BSP_001_01
+  - RFRO_BSP_001_02
+  - RFRO_BSP_001_03
+  - RFRO_BSP_001_04
+  - RFRO_BSP_001_05
+  - RFRO_BSP_001_06
+  - RFRO_BSP_001_07
+  - RFRO_BSP_003_01
+  - RFRO_DF1_001
+  - RFRO_DF1_001_01
+  - RFRO_DF1_001_02
+  - RFRO_DF1_001_03
+  - RFRO_DF1_001_04
+  - RFRO_DF1_002
+  - RFRO_DF1_002_01
+  - RFRO_DF1_003
+  - RFRO_DF1_005
+  - RFRO_DF1_005_01
+  - RFRO_DF2_001
+  - RFRO_DF2_001_01
+  - RFRO_DF2_002
+  - RFRO_DF2_002_01
+  - RFRO_DF2_002_02
+  - RFRO_DF2_003
+  - RFRO_DF2_003_01
+  - RFRO_DF2_004
+  - RFRO_DF2_007
+  - RFRO_DF2_007_01
+  - RFRO_PL1_001
+  - RFRO_PL1_001_01
+  - RFRO_PL1_001_02
+  - RFRO_PL1_003
+  - RFRO_PL1_005
+  - RFRO_PL1_005_01
+  - RFRO_PL1_006
+  - RFRO_PL1_006_01
+  - RFRO_SLN_001_01
+  - RFRO_SLN_001_02
+  - RFRO_SLN_015
+  - RFRO_SLN_016
+  - RFRO_SLN_017
+  - RFRO_SLN_018
+  - RFRO_SPR_001
+  - RFRO_SPR_001_01
+  - RFRO_SPR_001_02
+  - RFRO_TZE_001_02
+  - RFRO_TZE_002
+  - RFRO_TZE_003_01
+  - RFRO_TZE_003_04
+  - RFRO_TZE_003_05
+  - RFRO_TZE_004
+  - RFRO_UBS_001
+  - RFRO_UBS_001_01
+  - RFRO_UBS_001_02
+  - RFRO_UBS_002
+  - RFRO_UBS_002_01
+  - RFRO_UBS_002_02
+  - RFRO_UBS_002_03
+  - RFRO_UBS_002_04
+  - RFRO_UBS_002_05
+  - RFRO_UBS_003
+  - RFRO_UBS_003_01
+  - RFRO_UBS_003_02
+  - RFRO_UBS_009
+  - RFRO_UBS_009_01
+  - RUBY PROFiL
+  - Schenider_XB7NA8442
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc2
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgl
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgr
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI-dgm
+  - WK-GS28-P19-P25-92-0
+  - XEL071XXX-PC-A0-000
+  - XEL090XXX-FC-A0-000
+  - conta rtm
+  - din_913-m8x40-45h
+  - lpm erkek soket
+  - lpm saket 1
+  - lpm soket kapag_2
+  - lpm soket3
+  - mil kapa__
+  - mst mil
+  - soket contas_ 2
+  - vida rtm
+  - yuvarlak soket kapa__
+  - ~$6006
+
+📋 PDF'i Eksik Parçalar (369 adet):
+  - 000-IT7100E 3D drawing
+  - 1205861_AMTE-M-LH-G14
+  - 1463770 DSBC-50-30-PPVA_(Z_0)
+  - 1463770 DSBC-50-30_(K)
+  - 15.05.2025
+  - 153026_QSF-1_4-8-B
+  - 186120_QSL-G1_4-8
+  - 186161_QST-G1_4-8
+  - 250 mm STROKE 8-18
+  - 250 mm STROKE BORU
+  - 2601 0462 0001 AL
+  - 2601 0462 0001 IL
+  - 2601 0462 0001 RT
+  - 30.04.25_KS_1900
+  - 33892_LNG-50
+  - 3569_B-1_4
+  - 40430034
+  - 526489 MS4-LFR-1_4-D7-E-R-M-AS-1D_1
+  - 526489 MS4-LFR-M_1
+  - 527703 MS4-FRM-1_4-AD7-1s_1
+  - 531666_KS3-1_4-A
+  - 541266 MS4-EM1-1_4-1D_1
+  - 6002
+  - 6003
+  - 6004
+  - 6007-2RSR
+  - 608
+  - 60x60_YMENTESE_001
+  - 60x60_YMENTESE_002
+  - 6203
+  - 6204
+  - 6F-L-2
+  - 702025 MS4-SD5-D10-O-P-M8 AD7_1
+  - 79-493-1
+  - 79-493-2
+  - 79-493-3
+  - 79-493-5
+  - 79-493-7
+  - 8-18 BO_AZ YATA_I
+  - 8-18 P_STON
+  - 8092760 MS4-MV-B---(42.7_high_m)_1
+  - 8140202 MS4-WP1---(00wp)_1
+  - DA09S-02-X-X-X-20-S-A-X-OAD-OZP-X-X
+  - DA09S-04-X-X-X-20-S-A-X-OAD-OZP-X-X
+  - DIN 6885 A 4 x 4 x 10
+  - DIN 6885 A 4 x 4 x 12
+  - DIN 808-25-B12-56-EG (0-1)-egl
+  - DIN 808-25-B12-56-EG (0-1)-egr
+  - DIN 808-25-B12-56-EG-egm
+  - DIN-439-B - M16x1.5(F)
+  - DIN471_10
+  - DIN471_12
+  - DIN471_15
+  - DIN471_17
+  - DIN471_25
+  - DIN471_30
+  - DIN471_35
+  - DIN472_32
+  - DIN472_42
+  - DIN472_47
+  - DIN472_62
+  - DIN6885_st_steel_4x4x16
+  - DIN934_M12
+  - DIN934_M30
+  - DIN934_M6
+  - DIN934_M8
+  - EN_040_0_0_A-B07_B14_ML10A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ERX_44_p-M6x30-C1
+  - ET_040_0_L_T00_T00_ML242A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_040_0_R_T00_T00_ML42A_FL3A_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_050_0_0_T00_T00_ML11A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - ET_050_0_0_T00_T00_ML211A_0_0_0_0_0_0_0_0_0_0_0_0_M1
+  - GN 31-80-M16-75-B2-T (0-0)
+  - HSR15R1SS_DAR_TIP_ARABA
+  - HSR20LR1SS
+  - HSR20R1SS_DAR_TIP_ARABA
+  - HSR35C1SSM
+  - KFD4934
+  - KFD4936
+  - LPM soket vidas_
+  - Latch_GN_115-SC-20__1
+  - Latch_GN_115-SC-40__1
+  - M6 FEMALE JOINT
+  - M6 MALE JOINT
+  - M6 Somun
+  - MESAN_ELCEK_274.2.15
+  - OSKAR_308_GIZLI_MENTESE_001
+  - Plastik rondela
+  - R532_GVD_001
+  - R532_GVD_001_01
+  - R532_GVD_001_02
+  - R532_GVD_001_03
+  - R532_GVD_001_04
+  - R532_GVD_001_05
+  - R532_GVD_001_06
+  - R532_GVD_001_07
+  - R532_GVD_001_08
+  - R532_GVD_001_09
+  - R532_GVD_001_10
+  - R532_GVD_001_11
+  - R532_GVD_001_12
+  - R532_GVD_001_13
+  - R532_GVD_001_14
+  - R532_GVD_001_15
+  - R532_GVD_001_16
+  - R532_GVD_001_17
+  - R532_GVD_001_18
+  - R532_GVD_001_19
+  - R532_GVD_001_20
+  - R532_GVD_002_02
+  - R532_GVD_003
+  - R532_GVD_004
+  - R532_GVD_005
+  - R532_GVD_005_01
+  - R532_GVD_005_02
+  - R532_GVD_005_03
+  - R532_GVD_005_04
+  - R532_GVD_006
+  - R532_GVD_006_01
+  - R532_GVD_006_02
+  - R532_GVD_006_03
+  - R532_GVD_007
+  - R532_GVD_007_01
+  - R532_GVD_008
+  - R532_GVD_009
+  - R532_GVD_010
+  - R532_GVD_011
+  - R532_GVD_012
+  - R532_GVD_013
+  - R532_GVD_014
+  - R532_GVD_015
+  - R532_GVD_016
+  - R532_GVD_017
+  - R532_GVD_018
+  - R532_GYD_001
+  - R532_GYD_001_01
+  - R532_GYD_001_02
+  - R532_GYD_001_03
+  - R532_GYD_001_04
+  - R532_GYD_001_05
+  - R532_GYD_002
+  - R532_GYD_003
+  - R532_GYD_004
+  - R532_GYD_004_01
+  - R532_GYD_004_02
+  - R532_GYD_005
+  - R532_GYD_006
+  - R532_GYD_006_01
+  - R532_GYD_007
+  - R532_GYD_007_01
+  - R532_GYD_007_02
+  - R532_GYD_007_03
+  - R532_GYD_007_04
+  - R532_GYD_007_05
+  - R532_GYD_007_06
+  - R532_GYD_007_07
+  - R532_GYD_008
+  - R532_GYD_009
+  - R532_GYD_009-01
+  - R532_GYD_009_01
+  - R532_GYD_009_02
+  - R532_GYD_010
+  - R532_GYD_010_01
+  - R532_GYD_011
+  - R532_GYD_011_01
+  - R532_GYD_012
+  - R532_GYD_012_01
+  - R532_GYD_012_03
+  - R532_GYD_012_04
+  - R532_GYD_012_04-
+  - R532_GYD_012_05
+  - R532_GYD_012_10
+  - R532_GYD_013
+  - R532_GYD_013_01
+  - R532_GYD_013_02
+  - R532_GYD_014
+  - R532_GYD_015
+  - R532_GYD_016
+  - R532_PAN_001
+  - R532_PAN_001_01
+  - R532_PAN_001_02
+  - R532_PAN_001_03
+  - R532_PAN_001_04
+  - R532_PAN_001_05
+  - R532_PAN_001_06
+  - R532_PAN_001_07
+  - R532_PAN_001_08
+  - R532_PAN_002
+  - R532_PAN_003
+  - R532_PAN_003_01
+  - R532_PAN_004
+  - R532_UBS_001
+  - R532_UBS_001_01
+  - R532_UBS_002
+  - R532_UBS_002_01
+  - R532_UBS_002_02
+  - R532_UBS_002_03
+  - R532_UBS_002_04
+  - R532_UBS_002_05
+  - R532_UBS_002_06
+  - R532_UBS_002_07
+  - R532_UBS_003
+  - R532_UBS_004
+  - R532_UBS_004_01
+  - R532_UBS_005
+  - R532_UBS_006
+  - R532_UBS_007
+  - R532_UBS_008
+  - R532_UBS_090
+  - RFRO_AYR_001
+  - RFRO_AYR_002
+  - RFRO_AYR_003
+  - RFRO_AYR_004
+  - RFRO_AYR_005
+  - RFRO_AYR_006
+  - RFRO_AYR_007
+  - RFRO_AYR_008
+  - RFRO_AYR_009
+  - RFRO_AYR_011
+  - RFRO_AYR_012
+  - RFRO_AYR_013
+  - RFRO_AYR_014
+  - RFRO_AYR_015
+  - RFRO_BSP_001
+  - RFRO_BSP_001_01
+  - RFRO_BSP_001_02
+  - RFRO_BSP_001_03
+  - RFRO_BSP_001_04
+  - RFRO_BSP_001_05
+  - RFRO_BSP_001_06
+  - RFRO_BSP_001_07
+  - RFRO_BSP_002
+  - RFRO_BSP_003
+  - RFRO_BSP_003_01
+  - RFRO_BSP_004
+  - RFRO_BSP_005
+  - RFRO_DF1_001
+  - RFRO_DF1_001_01
+  - RFRO_DF1_001_02
+  - RFRO_DF1_001_03
+  - RFRO_DF1_001_04
+  - RFRO_DF1_002
+  - RFRO_DF1_002_01
+  - RFRO_DF1_003
+  - RFRO_DF1_004
+  - RFRO_DF1_005
+  - RFRO_DF1_005_01
+  - RFRO_DF2_001
+  - RFRO_DF2_001_01
+  - RFRO_DF2_002
+  - RFRO_DF2_002_01
+  - RFRO_DF2_002_02
+  - RFRO_DF2_003
+  - RFRO_DF2_003_01
+  - RFRO_DF2_004
+  - RFRO_DF2_005
+  - RFRO_DF2_006
+  - RFRO_DF2_007
+  - RFRO_DF2_007_01
+  - RFRO_DF2_008
+  - RFRO_DF2_009
+  - RFRO_PL1_001
+  - RFRO_PL1_001_01
+  - RFRO_PL1_001_02
+  - RFRO_PL1_002
+  - RFRO_PL1_003
+  - RFRO_PL1_004
+  - RFRO_PL1_005
+  - RFRO_PL1_005_01
+  - RFRO_PL1_006
+  - RFRO_PL1_006_01
+  - RFRO_SLN_001
+  - RFRO_SLN_001_01
+  - RFRO_SLN_001_02
+  - RFRO_SLN_002
+  - RFRO_SLN_004
+  - RFRO_SLN_005
+  - RFRO_SLN_006
+  - RFRO_SLN_007
+  - RFRO_SLN_008
+  - RFRO_SLN_009
+  - RFRO_SLN_010
+  - RFRO_SLN_011
+  - RFRO_SLN_012
+  - RFRO_SLN_013
+  - RFRO_SLN_014
+  - RFRO_SLN_015
+  - RFRO_SLN_016
+  - RFRO_SLN_017
+  - RFRO_SLN_018
+  - RFRO_SPR_001
+  - RFRO_SPR_001_01
+  - RFRO_SPR_001_02
+  - RFRO_SPR_002
+  - RFRO_SPR_003
+  - RFRO_SPR_004
+  - RFRO_SPR_005
+  - RFRO_SPR_005_01
+  - RFRO_SPR_006
+  - RFRO_SPR_007
+  - RFRO_SPR_008
+  - RFRO_SPR_009
+  - RFRO_SPR_010
+  - RFRO_SPR_011
+  - RFRO_SPR_012
+  - RFRO_TZE_001
+  - RFRO_TZE_001_01
+  - RFRO_TZE_001_02
+  - RFRO_TZE_001_03
+  - RFRO_TZE_002
+  - RFRO_TZE_003
+  - RFRO_TZE_003_01
+  - RFRO_TZE_003_02
+  - RFRO_TZE_003_03
+  - RFRO_TZE_003_04
+  - RFRO_TZE_003_05
+  - RFRO_TZE_004
+  - RFRO_UBS_001
+  - RFRO_UBS_001_01
+  - RFRO_UBS_001_02
+  - RFRO_UBS_002
+  - RFRO_UBS_002_01
+  - RFRO_UBS_002_02
+  - RFRO_UBS_002_03
+  - RFRO_UBS_002_04
+  - RFRO_UBS_002_05
+  - RFRO_UBS_002_06
+  - RFRO_UBS_003
+  - RFRO_UBS_003_01
+  - RFRO_UBS_003_02
+  - RFRO_UBS_004
+  - RFRO_UBS_005
+  - RFRO_UBS_006
+  - RFRO_UBS_007
+  - RFRO_UBS_008
+  - RFRO_UBS_009
+  - RFRO_UBS_009_01
+  - RFRO_UBS_010
+  - RFRO_UBS_011
+  - RFRO_UBS_012
+  - RFRO_UBS_013
+  - RFRO_UBS_014
+  - RFRO_UBS_015
+  - RFRO_UBS_016
+  - RFRO_UBS_017
+  - RFRO_UBS_018
+  - RFRO_UBS_019
+  - RUBY PROFiL
+  - Schenider_XB7NA8442
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0)-dgc2
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgl
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI (0-1)-dgr
+  - Stainless Steel - Universal joints with friction bearing DIN 808-42-K20-128-DG-NI-dgm
+  - Trapezoidal Lead Nut GN 103.1-20x4-LH-RG
+  - XEL071XXX-PC-A0-000
+  - XEL090XXX-FC-A0-000
+  - conta rtm
+  - din_913-m8x40-45h
+  - lpm erkek soket
+  - lpm saket 1
+  - lpm soket kapag_2
+  - lpm soket3
+  - mil kapa__
+  - mst mil
+  - soket contas_ 2
+  - vida rtm
+  - yuvarlak soket kapa__
+  - ~$6006
+
+⚠️  Sadece Teknik Resim/PDF Olan Parçalar (31 adet):
+  - 2601 0462 0001
+  - 40430034_C001
+  - 40430034_C002
+  - DIN 808-42-K20-128-DG-NI
+  - DIN808-25-B12-56-EG
+  - ERX-p Ayarlanabilir kollar _ Elesa+Ganter
+  - GN 31-T_TK Dengeleme ayağı _ Elesa+Ganter
+  - HPC - RTE-GG-38 19_25
+  - R532_GVD_001_M01
+  - R532_UBS_001_M01
+  - R532_UBS_002_M01
+  - RFRO_BSP_001_M01
+  - RFRO_DF1_001_M01
+  - RFRO_DF1_002_M01
+  - RFRO_DF1_005_M01
+  - RFRO_DF2_001_M01
+  - RFRO_DF2_002_M01
+  - RFRO_DF2_003_M01
+  - RFRO_DF2_007_M01
+  - RFRO_PL1_001_M01
+  - RFRO_PL1_005_M01
+  - RFRO_PL1_006_M01
+  - RFRO_SLN_001_M01
+  - RFRO_SPR_001_M01
+  - RFRO_UBS_001_M01
+  - RFRO_UBS_002_M01
+  - RFRO_UBS_003_M01
+  - RFRO_UBS_009_M01
+  - T-MOTION - CA.250.550
+  - Trapezoidal Lead Nut GN 103.1-20x4-RH-RG
+  - hm-110-er-40-s

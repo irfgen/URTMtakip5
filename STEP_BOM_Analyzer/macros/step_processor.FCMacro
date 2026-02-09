@@ -1,0 +1,334 @@
+# -*- coding: utf-8 -*-
+"""
+STEP BOM Analyzer - STEP Processor Macro
+FreeCAD Native Macro for STEP file import and analysis
+
+This macro handles:
+- STEP file import via FreeCAD Part module
+- Assembly hierarchy extraction
+- Part property analysis
+- Document management
+- Progress reporting via FreeCAD Console
+"""
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import Part
+import os
+import json
+import sys
+from datetime import datetime
+
+# Macro Information
+__title__ = "STEP BOM Analyzer - STEP Processor"
+__author__ = "ÜRTM Takip Ekibi"
+__version__ = "3.0.0"
+__date__ = "2025-09-07"
+
+def log_message(message, level="INFO"):
+    """FreeCAD Console'a mesaj yaz"""
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    formatted_msg = f"[{timestamp}] STEP_PROCESSOR - {level}: {message}"
+    
+    if level == "ERROR":
+        App.Console.PrintError(formatted_msg + "\n")
+    elif level == "WARNING": 
+        App.Console.PrintWarning(formatted_msg + "\n")
+    else:
+        App.Console.PrintMessage(formatted_msg + "\n")
+
+def create_new_document(doc_name="STEPAnalysis"):
+    """Yeni FreeCAD dokümantı oluştur"""
+    try:
+        # Mevcut dokümantı kapat (eğer varsa)
+        if App.ActiveDocument and App.ActiveDocument.Name == doc_name:
+            App.closeDocument(doc_name)
+        
+        # Yeni dokümant oluştur
+        doc = App.newDocument(doc_name)
+        log_message(f"Yeni dokümant oluşturuldu: {doc_name}")
+        return doc
+        
+    except Exception as e:
+        log_message(f"Dokümant oluşturma hatası: {str(e)}", "ERROR")
+        return None
+
+def import_step_file(step_file_path):
+    """STEP dosyasını FreeCAD'a import et"""
+    try:
+        log_message(f"STEP dosyası import ediliyor: {os.path.basename(step_file_path)}")
+        
+        # Dosya varlığını kontrol et
+        if not os.path.exists(step_file_path):
+            raise FileNotFoundError(f"STEP dosyası bulunamadı: {step_file_path}")
+        
+        # Dosya boyutunu kontrol et
+        file_size = os.path.getsize(step_file_path)
+        log_message(f"Dosya boyutu: {file_size:,} bytes ({file_size/1024/1024:.2f} MB)")
+        
+        # STEP dosyasını import et
+        doc = App.ActiveDocument
+        if not doc:
+            raise RuntimeError("Aktif dokümant bulunamadı")
+        
+        # Part.insert kullanarak STEP import
+        Part.insert(step_file_path, doc.Name)
+        
+        # Recompute document
+        doc.recompute()
+        
+        # Import sonucunu kontrol et
+        objects = doc.Objects
+        log_message(f"Import başarılı: {len(objects)} nesne yüklendi")
+        
+        return {
+            "success": True,
+            "objects": objects,
+            "object_count": len(objects),
+            "file_size": file_size
+        }
+        
+    except Exception as e:
+        log_message(f"STEP import hatası: {str(e)}", "ERROR")
+        return {
+            "success": False,
+            "error": str(e),
+            "objects": [],
+            "object_count": 0
+        }
+
+def analyze_object_properties(obj):
+    """FreeCAD nesne özelliklerini analiz et"""
+    try:
+        properties = {
+            "name": obj.Name,
+            "label": obj.Label,
+            "type": obj.TypeId,
+            "placement": str(obj.Placement) if hasattr(obj, 'Placement') else None
+        }
+        
+        # Shape analizi (eğer varsa)
+        if hasattr(obj, 'Shape') and obj.Shape:
+            shape = obj.Shape
+            
+            properties.update({
+                "has_shape": True,
+                "shape_type": str(shape.ShapeType) if hasattr(shape, 'ShapeType') else "Unknown",
+                "volume": float(shape.Volume) if hasattr(shape, 'Volume') else 0,
+                "area": float(shape.Area) if hasattr(shape, 'Area') else 0,
+                "mass": float(shape.Mass) if hasattr(shape, 'Mass') else 0
+            })
+            
+            # Bounding Box
+            if hasattr(shape, 'BoundBox'):
+                bbox = shape.BoundBox
+                properties["bounding_box"] = {
+                    "xmin": float(bbox.XMin), "ymin": float(bbox.YMin), "zmin": float(bbox.ZMin),
+                    "xmax": float(bbox.XMax), "ymax": float(bbox.YMax), "zmax": float(bbox.ZMax)
+                }
+            
+            # Center of Mass
+            if hasattr(shape, 'CenterOfMass'):
+                com = shape.CenterOfMass
+                properties["center_of_mass"] = {
+                    "x": float(com.x), "y": float(com.y), "z": float(com.z)
+                }
+        else:
+            properties["has_shape"] = False
+        
+        # Child objects (Assembly hierarchy)
+        if hasattr(obj, 'OutList'):
+            properties["children"] = [child.Name for child in obj.OutList]
+            properties["child_count"] = len(obj.OutList)
+        else:
+            properties["children"] = []
+            properties["child_count"] = 0
+        
+        return properties
+        
+    except Exception as e:
+        log_message(f"Nesne analiz hatası ({obj.Name}): {str(e)}", "WARNING")
+        return {
+            "name": obj.Name if hasattr(obj, 'Name') else "Unknown",
+            "error": str(e)
+        }
+
+def categorize_objects(objects):
+    """Nesneleri assembly/part olarak kategorize et"""
+    assemblies = []
+    parts = []
+    
+    for obj in objects:
+        try:
+            # Assembly mı part mı kontrolü
+            is_assembly = False
+            
+            # OutList kontrolü (alt objeler varsa assembly)
+            if hasattr(obj, 'OutList') and len(obj.OutList) > 0:
+                is_assembly = True
+            
+            # TypeId kontrolü
+            if hasattr(obj, 'TypeId'):
+                type_id = obj.TypeId
+                if 'Assembly' in type_id or 'Group' in type_id:
+                    is_assembly = True
+            
+            # Nesne özelliklerini analiz et
+            properties = analyze_object_properties(obj)
+            
+            if is_assembly:
+                assemblies.append(properties)
+            else:
+                parts.append(properties)
+                
+        except Exception as e:
+            log_message(f"Kategorizasyon hatası ({obj.Name}): {str(e)}", "WARNING")
+    
+    log_message(f"Kategorizasyon tamamlandı: {len(assemblies)} assembly, {len(parts)} part")
+    return assemblies, parts
+
+def generate_analysis_report(step_file_path, import_result, assemblies, parts):
+    """Analiz raporu oluştur"""
+    try:
+        file_info = {
+            "file_path": step_file_path,
+            "file_name": os.path.basename(step_file_path),
+            "file_size": import_result.get("file_size", 0)
+        }
+        
+        analysis_info = {
+            "total_objects": import_result.get("object_count", 0),
+            "assemblies_count": len(assemblies),
+            "parts_count": len(parts),
+            "processing_date": datetime.now().isoformat(),
+            "freecad_version": App.Version()
+        }
+        
+        report = {
+            "file_info": file_info,
+            "analysis": analysis_info,
+            "assemblies": assemblies,
+            "parts": parts
+        }
+        
+        return report
+        
+    except Exception as e:
+        log_message(f"Rapor oluşturma hatası: {str(e)}", "ERROR")
+        return None
+
+def save_analysis_to_file(report, output_dir):
+    """Analiz sonucunu dosyaya kaydet"""
+    try:
+        # Output dizinini oluştur
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # JSON dosyası yolu
+        json_file = os.path.join(output_dir, "step_analysis_freecad.json")
+        
+        # JSON dosyasına kaydet
+        with open(json_file, 'w', encoding='utf-8') as f:
+            json.dump(report, f, indent=2, ensure_ascii=False, default=str)
+        
+        log_message(f"Analiz sonucu kaydedildi: {json_file}")
+        return json_file
+        
+    except Exception as e:
+        log_message(f"Dosya kaydetme hatası: {str(e)}", "ERROR")
+        return None
+
+def process_step_file(step_file_path, output_dir):
+    """Ana STEP dosya işleme fonksiyonu"""
+    log_message("=" * 60)
+    log_message("STEP BOM Analyzer - FreeCAD Native Processing")
+    log_message("=" * 60)
+    
+    try:
+        # 1. Dokümant oluştur
+        doc = create_new_document("STEP_BOM_Analysis")
+        if not doc:
+            return {"success": False, "error": "Dokümant oluşturulamadı"}
+        
+        # 2. STEP dosyasını import et
+        log_message("Faz 1: STEP Import")
+        import_result = import_step_file(step_file_path)
+        if not import_result["success"]:
+            return {"success": False, "error": import_result["error"]}
+        
+        # 3. Nesneleri analiz et ve kategorize et
+        log_message("Faz 2: Nesne Analizi ve Kategorizasyon")
+        objects = import_result["objects"]
+        assemblies, parts = categorize_objects(objects)
+        
+        # 4. Analiz raporu oluştur
+        log_message("Faz 3: Rapor Oluşturma")
+        report = generate_analysis_report(step_file_path, import_result, assemblies, parts)
+        if not report:
+            return {"success": False, "error": "Rapor oluşturulamadı"}
+        
+        # 5. Sonucu dosyaya kaydet
+        log_message("Faz 4: Dosya Kaydetme")
+        output_file = save_analysis_to_file(report, output_dir)
+        if not output_file:
+            return {"success": False, "error": "Dosya kaydedilemedi"}
+        
+        # 6. Başarı raporu
+        log_message("=" * 60)
+        log_message("STEP PROCESSING COMPLETED SUCCESSFULLY!")
+        log_message(f"📊 Total Objects: {report['analysis']['total_objects']}")
+        log_message(f"🏗️  Assemblies: {report['analysis']['assemblies_count']}")
+        log_message(f"🔧 Parts: {report['analysis']['parts_count']}")
+        log_message(f"💾 Output: {output_file}")
+        log_message("=" * 60)
+        
+        return {
+            "success": True,
+            "report": report,
+            "output_file": output_file
+        }
+        
+    except Exception as e:
+        log_message(f"STEP işleme genel hatası: {str(e)}", "ERROR")
+        return {"success": False, "error": str(e)}
+    
+    finally:
+        # Dokümantı kapat
+        try:
+            if App.ActiveDocument:
+                App.closeDocument(App.ActiveDocument.Name)
+                log_message("Dokümant kapatıldı")
+        except:
+            pass
+
+# Macro çalıştırma fonksiyonu
+def main():
+    """Ana macro fonksiyonu - FreeCAD'dan çağrılır"""
+    
+    # Test parametreleri (gerçekte dışarıdan gelecek)
+    test_step_file = r"C:\path\to\test.step"
+    test_output_dir = r"C:\temp\step_analysis"
+    
+    if len(sys.argv) > 1:
+        # Komut satırından parametreler
+        step_file_path = sys.argv[1]
+        output_dir = sys.argv[2] if len(sys.argv) > 2 else test_output_dir
+    else:
+        # Test modu
+        step_file_path = test_step_file
+        output_dir = test_output_dir
+        log_message("Test modunda çalışıyor - gerçek parametreleri bekliyor")
+    
+    # STEP dosyasını işle
+    result = process_step_file(step_file_path, output_dir)
+    
+    # Sonucu yazdır
+    if result["success"]:
+        log_message("✅ STEP BOM Analysis tamamlandı!")
+    else:
+        log_message(f"❌ Hata: {result['error']}", "ERROR")
+    
+    return result
+
+# FreeCAD Macro olarak çalıştırıldığında
+if __name__ == "__main__":
+    main()

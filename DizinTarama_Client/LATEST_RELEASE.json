@@ -1,0 +1,37 @@
+{
+    "version": "1.2.17",
+    "version_full": "1.2.17.20250107001",
+    "release_date": "2025-01-07",
+    "build_number": "20250107001",
+    "download_url": "downloads/URTM_DizinTarama_Client_v1.2.17.zip",
+    "file_size": "150KB",
+    "changelog": [
+        "v1.2.17 - 2025-01-07:",
+        "- YENİ: Dizin temizliği - 40+ gereksiz dosya kaldırıldı",
+        "- YENİ: version.py ana dizine eklendi",
+        "- GELİŞTİRME: README.md daha temiz ve anlaşılır hale getirildi",
+        "- GELİŞTİRME: Proje yapısı sadeleştirildi",
+        "",
+        "v1.2.16 - 2025-10-07:",
+        "- KRITIK: VERSION_FULL tanımlanmamış hatası düzeltildi",
+        "- KRITIK: Enhanced tarama modunda versiyon gönderme sorunu çözüldü",
+        "- GELİŞTİRME: Her iki client versiyonunda da VERSION_FULL kullanımı düzeltildi",
+        "",
+        "v1.2.15 - 2025-01-06:",
+        "- KRITIK: Backend API URL'si port 3000'e düzeltildi",
+        "- YENİ: Parça detay penceresinde veritabanına kaydetme butonu eklendi",
+        "- YENİ: Seçili parçaları toplu olarak veritabanına kaydetme özelliği",
+        "- YENİ: Database client'a save_parts_to_database fonksiyonu eklendi",
+        "",
+        "v1.2.14 - 2025-01-06:",
+        "- YENİ: Parça detay penceresinde veritabanına kaydetme butonu eklendi",
+        "- YENİ: Seçili parçaları toplu olarak veritabanına kaydetme özelliği",
+        "- YENİ: Database client'a save_parts_to_database fonksiyonu eklendi"
+    ],
+    "requirements": [
+        "Python 3.8+",
+        "Windows 10/11",
+        "requests>=2.25.0"
+    ],
+    "compatible_backend": "14.0.0+"
+}

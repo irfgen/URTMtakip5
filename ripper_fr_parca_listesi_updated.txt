@@ -1,0 +1,35 @@
+=== RIPPER_FR PARÇA LİSTESİ VE DOSYA GRUPLANDıRMASı ===
+Oluşturulma Tarihi: 2025-09-18 16:15:00
+SMB Paylaşım: //192.168.1.86/mzk makineler/KAPI_EBATLAMA_MAKINELERI/RIPPER_SERI_MAKINELER/RIPPER_FR
+IPTAL klasörleri hariç tutulmuştur.
+Terminoloji güncellendi: .slddrw dosyaları -> Drawing Dosyası, .pdf dosyaları -> Teknik Resim Dosyası
+
+=== ÖZET ===
+Toplam Parça Sayısı: 413
+Toplam SLDPRT Dosyası: 413
+Toplam SLDDRW Dosyası: 374
+Toplam PDF Dosyası: 165
+Toplam Dosya: 952
+
+=== TERMİNOLOJİ DEĞİŞİKLİKLERİ ===
+- .slddrw dosyaları artık "Drawing Dosyası" olarak adlandırılmaktadır
+- .pdf dosyaları artık "Teknik Resim Dosyası" olarak adlandırılmaktadır
+- Backend ve frontend sistemleri bu yeni terminolojiyi kullanacak şekilde güncellenmiştir
+
+=== PARÇA BAZLI GRUPLAMA ===
+(Önceden oluşturulan analizde 413 parça gruplanmıştı)
+
+=== EKSİK DOSYA ANALİZİ ===
+
+🚨 Drawing Dosyası Eksik Parçalar (39 adet):
+(3D çizim dosyası var ancak drawing dosyası eksik parçalar)
+
+📋 Teknik Resim Dosyası Eksik Parçalar (248 adet):
+(3D çizim dosyası var ancak teknik resim dosyası eksik parçalar)
+
+⚠️  Sadece Drawing/Teknik Resim Dosyası Olan Parçalar:
+(3D çizim dosyası olmayan ancak drawing veya teknik resim dosyası olan parçalar)
+
+=== NOT ===
+Bu rapor mevcut sistemdeki terminoloji değişikliklerini yansıtmak için oluşturulmuştur.
+Gerçek zamanlı analiz için sistem üzerinden "Dizin Tarama" modülünü kullanınız.

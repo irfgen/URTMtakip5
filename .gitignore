@@ -1,0 +1,130 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tgz
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IDE - Other
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+*.lcov
+.nyc_output/
+
+# SQLite databases
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Database backups
+*_backup_*.sqlite
+*_backup_*.sqlite3
+*_backup_*.db
+*_yedek/
+*database*.sqlite
+*database*.sqlite3
+*database*.db
+
+# Uploads and temporary files
+uploads/
+temp/
+tmp/
+*.tmp
+*.temp
+
+# OS
+Thumbs.db
+.DS_Store
+*.bak
+*.backup
+
+# ESP32 / PlatformIO
+CNC_panel/.pio/
+CNC_panel/.vscode/.browse.c_cpp.db*
+CNC_PANEL/.vscode/c_cpp_properties.json
+CNC_panel/.gcc-flags.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# FreeCAD
+*.FCStd
+*.FCStd1
+
+# SolidWorks
+*.sldprt
+*.sldasm
+*.slddrw
+~$*
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Misc
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port

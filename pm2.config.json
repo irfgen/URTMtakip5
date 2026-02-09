@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "urtmtakip-backend",
+      "script": "./backend/src/server.js",
+      "cwd": "/var/www/urtmtakip",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3000
+      },
+      "env_development": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      },
+      "log_file": "/var/log/pm2/urtmtakip-backend.log",
+      "error_file": "/var/log/pm2/urtmtakip-backend-error.log",
+      "out_file": "/var/log/pm2/urtmtakip-backend-out.log",
+      "merge_logs": true,
+      "time": true,
+      "max_restarts": 10,
+      "min_uptime": "10s",
+      "max_memory_restart": "500M"
+    }
+  ]
+}

@@ -1,0 +1,1131 @@
+{
+  "success": true,
+  "message": "Excel dosyası başarıyla parse edildi",
+  "teklifGrubuAdi": "DPE-ORTAK FREZE PARÇALAR SİPARİŞ",
+  "headers": [
+    "ADET",
+    "PARÇA ADI",
+    "KESIT",
+    "BOY",
+    "MAZLEME",
+    "TERKİN MAKİNA",
+    "MARİMAK",
+    "KOWAY MAKİNA",
+    "BİRCAN METAL"
+  ],
+  "columnMapping": {
+    "adet": 0,
+    "parca_kodu": 1,
+    "malzeme_kesiti": 2,
+    "uzunluk": 3,
+    "malzeme_cinsi": 4
+  },
+  "firmaColumns": [
+    {
+      "index": 5,
+      "firmaAdi": "TERKİN MAKİNA"
+    },
+    {
+      "index": 6,
+      "firmaAdi": "MARİMAK"
+    },
+    {
+      "index": 7,
+      "firmaAdi": "KOWAY MAKİNA"
+    },
+    {
+      "index": 8,
+      "firmaAdi": "BİRCAN METAL"
+    }
+  ],
+  "data": [
+    {
+      "satir_no": 3,
+      "adet": 20,
+      "parca_kodu": "EPEO_KSC-002",
+      "malzeme_kesiti": "40X25",
+      "uzunluk": "45",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 180
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 70
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 350
+        }
+      ]
+    },
+    {
+      "satir_no": 4,
+      "adet": 40,
+      "parca_kodu": "EPEO_KSC-003",
+      "malzeme_kesiti": "30X20",
+      "uzunluk": "85",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 275
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 250
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 250
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 400
+        }
+      ]
+    },
+    {
+      "satir_no": 5,
+      "adet": 20,
+      "parca_kodu": "EPEO_CZC_002",
+      "malzeme_kesiti": "40X25",
+      "uzunluk": "45",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 135
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 70
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 350
+        }
+      ]
+    },
+    {
+      "satir_no": 6,
+      "adet": 50,
+      "parca_kodu": "DPEO_CZC_015",
+      "malzeme_kesiti": "40X25",
+      "uzunluk": "30",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        }
+      ]
+    },
+    {
+      "satir_no": 7,
+      "adet": 120,
+      "parca_kodu": "DPEO_PKR_004",
+      "malzeme_kesiti": "50X20",
+      "uzunluk": "53",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 125
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 75
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 350
+        }
+      ]
+    },
+    {
+      "satir_no": 8,
+      "adet": 40,
+      "parca_kodu": "EPEO_PKP_006",
+      "malzeme_kesiti": "120X60",
+      "uzunluk": "120",
+      "malzeme_cinsi": "C1040",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 850
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 850
+        }
+      ]
+    },
+    {
+      "satir_no": 9,
+      "adet": 50,
+      "parca_kodu": "DPEO_PKP_007",
+      "malzeme_kesiti": "20X15",
+      "uzunluk": "153",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 80
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 80
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 250
+        }
+      ]
+    },
+    {
+      "satir_no": 10,
+      "adet": 100,
+      "parca_kodu": "D383_KOPRU_019",
+      "malzeme_kesiti": "10X15",
+      "uzunluk": "105",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 80
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 80
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 210
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 250
+        }
+      ]
+    },
+    {
+      "satir_no": 11,
+      "adet": 50,
+      "parca_kodu": "DPEO_BLK_008-SOL",
+      "malzeme_kesiti": "50X50",
+      "uzunluk": "340",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 450
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 500
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 590
+        }
+      ]
+    },
+    {
+      "satir_no": 12,
+      "adet": 50,
+      "parca_kodu": "DPEO_BLK_008-SAG",
+      "malzeme_kesiti": "50X50",
+      "uzunluk": "340",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 450
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 500
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 590
+        }
+      ]
+    },
+    {
+      "satir_no": 13,
+      "adet": 20,
+      "parca_kodu": "EPEO_BLK_006",
+      "malzeme_kesiti": "100X40",
+      "uzunluk": "316",
+      "malzeme_cinsi": "SICAK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 750
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 450
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 360
+        }
+      ]
+    },
+    {
+      "satir_no": 14,
+      "adet": 20,
+      "parca_kodu": "EPEO_BLK_007",
+      "malzeme_kesiti": "100X40",
+      "uzunluk": "526",
+      "malzeme_cinsi": "SICAK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 750
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 600
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 750
+        }
+      ]
+    },
+    {
+      "satir_no": 15,
+      "adet": 40,
+      "parca_kodu": "DPEO-BLK_012",
+      "malzeme_kesiti": "35X25",
+      "uzunluk": "90",
+      "malzeme_cinsi": "ALÜMİNYUM",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 125
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 50
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 125
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 200
+        }
+      ]
+    },
+    {
+      "satir_no": 16,
+      "adet": 30,
+      "parca_kodu": "DPEO_TSY_005",
+      "malzeme_kesiti": "20X15",
+      "uzunluk": "130",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 75
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 60
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 185
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 200
+        }
+      ]
+    },
+    {
+      "satir_no": 17,
+      "adet": 30,
+      "parca_kodu": "DPEO_UBS_009",
+      "malzeme_kesiti": "25X100",
+      "uzunluk": "50",
+      "malzeme_cinsi": "POLIEMID",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 275
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 60
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 500
+        }
+      ]
+    },
+    {
+      "satir_no": 18,
+      "adet": 30,
+      "parca_kodu": "DPEO_UBS_010",
+      "malzeme_kesiti": "25X100",
+      "uzunluk": "50",
+      "malzeme_cinsi": "POLIEMID",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 275
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 80
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 235
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 500
+        }
+      ]
+    },
+    {
+      "satir_no": 19,
+      "adet": 40,
+      "parca_kodu": "EPEO_ARB_001",
+      "malzeme_kesiti": "100X25",
+      "uzunluk": "705",
+      "malzeme_cinsi": "SICAK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 1250
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 2950
+        }
+      ]
+    },
+    {
+      "satir_no": 20,
+      "adet": 40,
+      "parca_kodu": "EPEO_ARB_002",
+      "malzeme_kesiti": "100X25",
+      "uzunluk": "335",
+      "malzeme_cinsi": "SICAK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 750
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 750
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 1650
+        }
+      ]
+    },
+    {
+      "satir_no": 21,
+      "adet": 20,
+      "parca_kodu": "EPEO_YDT_004",
+      "malzeme_kesiti": "20X30",
+      "uzunluk": "60",
+      "malzeme_cinsi": "SOĞUK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 65
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 100
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 200
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 300
+        }
+      ]
+    },
+    {
+      "satir_no": 22,
+      "adet": 40,
+      "parca_kodu": "EPEO_YDK_001",
+      "malzeme_kesiti": "50X50",
+      "uzunluk": "85",
+      "malzeme_cinsi": "SICAK",
+      "firmalar": [
+        {
+          "firma_adi": "TERKİN MAKİNA",
+          "teklif_fiyati": 350
+        },
+        {
+          "firma_adi": "MARİMAK",
+          "teklif_fiyati": 350
+        },
+        {
+          "firma_adi": "KOWAY MAKİNA",
+          "teklif_fiyati": 280
+        },
+        {
+          "firma_adi": "BİRCAN METAL",
+          "teklif_fiyati": 500
+        }
+      ]
+    }
+  ],
+  "teklifData": [
+    {
+      "parca_kodu": "EPEO_KSC-002",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 180,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 3
+    },
+    {
+      "parca_kodu": "EPEO_KSC-002",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 70,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 3
+    },
+    {
+      "parca_kodu": "EPEO_KSC-002",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 3
+    },
+    {
+      "parca_kodu": "EPEO_KSC-002",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 350,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 3
+    },
+    {
+      "parca_kodu": "EPEO_KSC-003",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 275,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 30X20, Boy: 85, Malzeme: SOĞUK",
+      "satir_no": 4
+    },
+    {
+      "parca_kodu": "EPEO_KSC-003",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 250,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 30X20, Boy: 85, Malzeme: SOĞUK",
+      "satir_no": 4
+    },
+    {
+      "parca_kodu": "EPEO_KSC-003",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 250,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 30X20, Boy: 85, Malzeme: SOĞUK",
+      "satir_no": 4
+    },
+    {
+      "parca_kodu": "EPEO_KSC-003",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 400,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 30X20, Boy: 85, Malzeme: SOĞUK",
+      "satir_no": 4
+    },
+    {
+      "parca_kodu": "EPEO_CZC_002",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 135,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 5
+    },
+    {
+      "parca_kodu": "EPEO_CZC_002",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 70,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 5
+    },
+    {
+      "parca_kodu": "EPEO_CZC_002",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 5
+    },
+    {
+      "parca_kodu": "EPEO_CZC_002",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 350,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 45, Malzeme: SOĞUK",
+      "satir_no": 5
+    },
+    {
+      "parca_kodu": "DPEO_CZC_015",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 40X25, Boy: 30, Malzeme: SOĞUK",
+      "satir_no": 6
+    },
+    {
+      "parca_kodu": "DPEO_PKR_004",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 125,
+      "adet": 120,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X20, Boy: 53, Malzeme: SOĞUK",
+      "satir_no": 7
+    },
+    {
+      "parca_kodu": "DPEO_PKR_004",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 75,
+      "adet": 120,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X20, Boy: 53, Malzeme: SOĞUK",
+      "satir_no": 7
+    },
+    {
+      "parca_kodu": "DPEO_PKR_004",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 120,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X20, Boy: 53, Malzeme: SOĞUK",
+      "satir_no": 7
+    },
+    {
+      "parca_kodu": "DPEO_PKR_004",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 350,
+      "adet": 120,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X20, Boy: 53, Malzeme: SOĞUK",
+      "satir_no": 7
+    },
+    {
+      "parca_kodu": "EPEO_PKP_006",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 850,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 120X60, Boy: 120, Malzeme: C1040",
+      "satir_no": 8
+    },
+    {
+      "parca_kodu": "EPEO_PKP_006",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 850,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 120X60, Boy: 120, Malzeme: C1040",
+      "satir_no": 8
+    },
+    {
+      "parca_kodu": "DPEO_PKP_007",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 80,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 153, Malzeme: SOĞUK",
+      "satir_no": 9
+    },
+    {
+      "parca_kodu": "DPEO_PKP_007",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 80,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 153, Malzeme: SOĞUK",
+      "satir_no": 9
+    },
+    {
+      "parca_kodu": "DPEO_PKP_007",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 153, Malzeme: SOĞUK",
+      "satir_no": 9
+    },
+    {
+      "parca_kodu": "DPEO_PKP_007",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 250,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 153, Malzeme: SOĞUK",
+      "satir_no": 9
+    },
+    {
+      "parca_kodu": "D383_KOPRU_019",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 80,
+      "adet": 100,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 10X15, Boy: 105, Malzeme: SOĞUK",
+      "satir_no": 10
+    },
+    {
+      "parca_kodu": "D383_KOPRU_019",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 80,
+      "adet": 100,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 10X15, Boy: 105, Malzeme: SOĞUK",
+      "satir_no": 10
+    },
+    {
+      "parca_kodu": "D383_KOPRU_019",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 210,
+      "adet": 100,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 10X15, Boy: 105, Malzeme: SOĞUK",
+      "satir_no": 10
+    },
+    {
+      "parca_kodu": "D383_KOPRU_019",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 250,
+      "adet": 100,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 10X15, Boy: 105, Malzeme: SOĞUK",
+      "satir_no": 10
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SOL",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 450,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 11
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SOL",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 500,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 11
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SOL",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 590,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 11
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SAG",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 450,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 12
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SAG",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 500,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 12
+    },
+    {
+      "parca_kodu": "DPEO_BLK_008-SAG",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 590,
+      "adet": 50,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 340, Malzeme: SOĞUK",
+      "satir_no": 12
+    },
+    {
+      "parca_kodu": "EPEO_BLK_006",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 750,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 316, Malzeme: SICAK",
+      "satir_no": 13
+    },
+    {
+      "parca_kodu": "EPEO_BLK_006",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 450,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 316, Malzeme: SICAK",
+      "satir_no": 13
+    },
+    {
+      "parca_kodu": "EPEO_BLK_006",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 360,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 316, Malzeme: SICAK",
+      "satir_no": 13
+    },
+    {
+      "parca_kodu": "EPEO_BLK_007",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 750,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 526, Malzeme: SICAK",
+      "satir_no": 14
+    },
+    {
+      "parca_kodu": "EPEO_BLK_007",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 600,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 526, Malzeme: SICAK",
+      "satir_no": 14
+    },
+    {
+      "parca_kodu": "EPEO_BLK_007",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 750,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X40, Boy: 526, Malzeme: SICAK",
+      "satir_no": 14
+    },
+    {
+      "parca_kodu": "DPEO-BLK_012",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 125,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 35X25, Boy: 90, Malzeme: ALÜMİNYUM",
+      "satir_no": 15
+    },
+    {
+      "parca_kodu": "DPEO-BLK_012",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 50,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 35X25, Boy: 90, Malzeme: ALÜMİNYUM",
+      "satir_no": 15
+    },
+    {
+      "parca_kodu": "DPEO-BLK_012",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 125,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 35X25, Boy: 90, Malzeme: ALÜMİNYUM",
+      "satir_no": 15
+    },
+    {
+      "parca_kodu": "DPEO-BLK_012",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 200,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 35X25, Boy: 90, Malzeme: ALÜMİNYUM",
+      "satir_no": 15
+    },
+    {
+      "parca_kodu": "DPEO_TSY_005",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 75,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 130, Malzeme: SOĞUK",
+      "satir_no": 16
+    },
+    {
+      "parca_kodu": "DPEO_TSY_005",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 60,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 130, Malzeme: SOĞUK",
+      "satir_no": 16
+    },
+    {
+      "parca_kodu": "DPEO_TSY_005",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 185,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 130, Malzeme: SOĞUK",
+      "satir_no": 16
+    },
+    {
+      "parca_kodu": "DPEO_TSY_005",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 200,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X15, Boy: 130, Malzeme: SOĞUK",
+      "satir_no": 16
+    },
+    {
+      "parca_kodu": "DPEO_UBS_009",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 275,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 17
+    },
+    {
+      "parca_kodu": "DPEO_UBS_009",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 60,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 17
+    },
+    {
+      "parca_kodu": "DPEO_UBS_009",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 17
+    },
+    {
+      "parca_kodu": "DPEO_UBS_009",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 500,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 17
+    },
+    {
+      "parca_kodu": "DPEO_UBS_010",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 275,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 18
+    },
+    {
+      "parca_kodu": "DPEO_UBS_010",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 80,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 18
+    },
+    {
+      "parca_kodu": "DPEO_UBS_010",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 235,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 18
+    },
+    {
+      "parca_kodu": "DPEO_UBS_010",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 500,
+      "adet": 30,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 25X100, Boy: 50, Malzeme: POLIEMID",
+      "satir_no": 18
+    },
+    {
+      "parca_kodu": "EPEO_ARB_001",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 1250,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X25, Boy: 705, Malzeme: SICAK",
+      "satir_no": 19
+    },
+    {
+      "parca_kodu": "EPEO_ARB_001",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 2950,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X25, Boy: 705, Malzeme: SICAK",
+      "satir_no": 19
+    },
+    {
+      "parca_kodu": "EPEO_ARB_002",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 750,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X25, Boy: 335, Malzeme: SICAK",
+      "satir_no": 20
+    },
+    {
+      "parca_kodu": "EPEO_ARB_002",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 750,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X25, Boy: 335, Malzeme: SICAK",
+      "satir_no": 20
+    },
+    {
+      "parca_kodu": "EPEO_ARB_002",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 1650,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 100X25, Boy: 335, Malzeme: SICAK",
+      "satir_no": 20
+    },
+    {
+      "parca_kodu": "EPEO_YDT_004",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 65,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X30, Boy: 60, Malzeme: SOĞUK",
+      "satir_no": 21
+    },
+    {
+      "parca_kodu": "EPEO_YDT_004",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 100,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X30, Boy: 60, Malzeme: SOĞUK",
+      "satir_no": 21
+    },
+    {
+      "parca_kodu": "EPEO_YDT_004",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 200,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X30, Boy: 60, Malzeme: SOĞUK",
+      "satir_no": 21
+    },
+    {
+      "parca_kodu": "EPEO_YDT_004",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 300,
+      "adet": 20,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 20X30, Boy: 60, Malzeme: SOĞUK",
+      "satir_no": 21
+    },
+    {
+      "parca_kodu": "EPEO_YDK_001",
+      "firma_adi": "TERKİN MAKİNA",
+      "teklif_fiyati": 350,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 85, Malzeme: SICAK",
+      "satir_no": 22
+    },
+    {
+      "parca_kodu": "EPEO_YDK_001",
+      "firma_adi": "MARİMAK",
+      "teklif_fiyati": 350,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 85, Malzeme: SICAK",
+      "satir_no": 22
+    },
+    {
+      "parca_kodu": "EPEO_YDK_001",
+      "firma_adi": "KOWAY MAKİNA",
+      "teklif_fiyati": 280,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 85, Malzeme: SICAK",
+      "satir_no": 22
+    },
+    {
+      "parca_kodu": "EPEO_YDK_001",
+      "firma_adi": "BİRCAN METAL",
+      "teklif_fiyati": 500,
+      "adet": 40,
+      "teslim_suresi": 30,
+      "aciklama": "Kesit: 50X50, Boy: 85, Malzeme: SICAK",
+      "satir_no": 22
+    }
+  ],
+  "totalRows": 20,
+  "totalTeklifler": 68
+}

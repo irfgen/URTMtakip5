@@ -1,0 +1,29 @@
+{
+    "version": "1.2.15",
+    "version_full": "1.2.15.20250106003",
+    "release_date": "2025-01-06",
+    "build_number": "20250106003",
+    "download_url": "downloads/URTM_DizinTarama_Client_v1.2.15.zip",
+    "file_size": "120KB",
+    "changelog": [
+        "v1.2.15 - 2025-01-06:",
+        "- KRITIK: Backend API URL'si port 3000'e düzeltildi",
+        "- YENİ: Parça detay penceresinde veritabanına kaydetme butonu eklendi",
+        "- YENİ: Seçili parçaları toplu olarak veritabanına kaydetme özelliği",
+        "- YENİ: Database client'a save_parts_to_database fonksiyonu eklendi",
+        "- GELİŞTİRME: Kaydetme sonuçlarını detaylı gösterim",
+        "- GELİŞTİRME: Progress indicator ve onay dialog'lari",
+        "- GELİŞTİRME: Debug logging geliştirildi",
+        "",
+        "v1.2.14 - 2025-01-06:",
+        "- YENİ: Parça detay penceresinde veritabanına kaydetme butonu eklendi",
+        "- YENİ: Seçili parçaları toplu olarak veritabanına kaydetme özelliği",
+        "- KRITIK: Backend API URL'si port 5000'e düzeltildi (hatalıydı)"
+    ],
+    "requirements": [
+        "Python 3.8+",
+        "Windows 10/11",
+        "requests>=2.25.0"
+    ],
+    "compatible_backend": "11.3.184+"
+}

@@ -1,0 +1,19 @@
+platformio.ini:
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+lib_deps = ArduinoJson
+
+test/test_main.cpp:
+#include <Arduino.h>
+#include <ArduinoJson.h>
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.println("Hello, World!");
+  delay(1000);
+}

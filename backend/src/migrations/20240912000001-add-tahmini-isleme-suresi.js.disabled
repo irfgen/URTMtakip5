@@ -1,0 +1,16 @@
+'use strict';
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.addColumn('is_emirleri', 'tahmini_isleme_suresi', {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      defaultValue: 1,
+      comment: 'İş emrinin tahmini işleme süresi (vardiya cinsinden)'
+    });
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.removeColumn('is_emirleri', 'tahmini_isleme_suresi');
+  }
+};

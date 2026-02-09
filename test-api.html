@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezgah İş Planı API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .station {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .station-header {
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .station-content {
+            padding: 15px;
+            min-height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        .work-order-card {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            min-height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .work-order-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .work-order-number {
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-bottom: 4px;
+        }
+        .work-order-name {
+            font-size: 0.75em;
+            color: #666;
+            margin-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .work-order-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7em;
+        }
+        .quantity {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 6px;
+            border-radius: 12px;
+        }
+        .duration {
+            color: #666;
+            font-weight: bold;
+        }
+        .empty-station {
+            width: 100%;
+            text-align: center;
+            color: #999;
+            font-style: italic;
+            padding: 40px 0;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        .beklemede { background-color: #FFF3CD; color: #856404; }
+        .tornalar { background-color: #D4E6F1; color: #1565C0; }
+        .frezeler { background-color: #D5F4E6; color: #2E7D32; }
+        .metre { background-color: #F8D7DA; color: #C62828; }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+        }
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #c62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏭 Tezgah İş Planı - Test Sayfası</h1>
+            <p>Yeni API'nin test edilmesi için hazırlanan sayfa</p>
+            <button onclick="loadData()" style="padding: 10px 20px; font-size: 16px; background: #1976d2; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Veri Yükle / Yenile
+            </button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <h3>Veriler yükleniyor... ⏳</h3>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="content"></div>
+
+        <div id="stats" class="stats"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:5001/api';
+        
+        const STATIONS = {
+            'BEKLEMEDE': 'Beklemede',
+            'TORNALAR': 'Tornalar', 
+            'FREZELER': 'Frezeler',
+            '3_METRE': '3 Metre',
+            '5_METRE': '5 Metre',
+            '6_METRE': '6 Metre',
+            '8_METRE': '8 Metre'
+        };
+
+        const STATION_COLORS = {
+            'BEKLEMEDE': '#FFF3CD',
+            'TORNALAR': '#D4E6F1',  
+            'FREZELER': '#D5F4E6',
+            '3_METRE': '#F8D7DA',
+            '5_METRE': '#F8D7DA',
+            '6_METRE': '#F8D7DA',
+            '8_METRE': '#F8D7DA'
+        };
+
+        function calculateCardWidth(duration) {
+            return 120 + (duration - 1) * 40;
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return 'Tarih yok';
+            const date = new Date(dateString);
+            return date.toLocaleDateString('tr-TR');
+        }
+
+        function renderWorkOrderCard(workOrder) {
+            const width = calculateCardWidth(workOrder.tahmini_isleme_suresi || 1);
+            
+            return `
+                <div class="work-order-card" style="width: ${width}px; background-color: ${STATION_COLORS[workOrder.istasyon] || '#ffffff'};">
+                    <div class="work-order-number">${workOrder.is_emri_no}</div>
+                    <div class="work-order-name" title="${workOrder.is_adi}">${workOrder.is_adi || 'İsim yok'}</div>
+                    <div class="work-order-details">
+                        <span class="quantity">${workOrder.adet} adet</span>
+                        <span class="duration">${workOrder.tahmini_isleme_suresi || 1}v</span>
+                    </div>
+                    <div style="font-size: 0.6em; color: #999; margin-top: 4px;">
+                        ${formatDate(workOrder.teslim_tarihi)} | ${workOrder.durum}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStation(stationKey, stationName, workOrders) {
+            const stationClass = stationKey.toLowerCase().replace('_', '');
+            
+            const content = workOrders.length > 0 
+                ? workOrders.map(wo => renderWorkOrderCard(wo)).join('')
+                : '<div class="empty-station">Bu istasyonda iş emri bulunmuyor</div>';
+
+            return `
+                <div class="station">
+                    <div class="station-header ${stationClass}" style="background-color: ${STATION_COLORS[stationKey]};">
+                        ${stationName} (${workOrders.length} iş emri)
+                    </div>
+                    <div class="station-content">
+                        ${content}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStats(data) {
+            return Object.entries(STATIONS).map(([key, name]) => {
+                const count = data[key]?.length || 0;
+                const stationClass = key.toLowerCase().replace('_', '');
+                
+                return `
+                    <div class="stat-card ${stationClass}" style="background-color: ${STATION_COLORS[key]};">
+                        <h2>${count}</h2>
+                        <p>${name}</p>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        async function loadData() {
+            const loadingEl = document.getElementById('loading');
+            const errorEl = document.getElementById('error');
+            const contentEl = document.getElementById('content');
+            const statsEl = document.getElementById('stats');
+
+            loadingEl.style.display = 'block';
+            errorEl.style.display = 'none';
+            contentEl.innerHTML = '';
+            statsEl.innerHTML = '';
+
+            try {
+                console.log('API çağrısı başlatılıyor...');
+                const response = await fetch(`${API_BASE}/tezgah-is-plani`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const result = await response.json();
+                console.log('API yanıtı:', result);
+
+                if (!result.success || !result.data) {
+                    throw new Error('Geçersiz API yanıtı');
+                }
+
+                const data = result.data;
+                
+                // İstasyon satırlarını render et
+                const stationsHtml = Object.entries(STATIONS).map(([key, name]) => 
+                    renderStation(key, name, data[key] || [])
+                ).join('');
+
+                contentEl.innerHTML = stationsHtml;
+                
+                // İstatistikleri render et
+                statsEl.innerHTML = renderStats(data);
+
+                console.log('✅ Veriler başarıyla yüklendi!');
+                
+            } catch (error) {
+                console.error('❌ Hata:', error);
+                errorEl.textContent = `Hata: ${error.message}`;
+                errorEl.style.display = 'block';
+            } finally {
+                loadingEl.style.display = 'none';
+            }
+        }
+
+        // Sayfa yüklendiğinde veri çek
+        document.addEventListener('DOMContentLoaded', loadData);
+
+        // İş emri kartlarına tıklama eventi (test için)
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.work-order-card')) {
+                const card = e.target.closest('.work-order-card');
+                console.log('İş emri kartı tıklandı:', card.querySelector('.work-order-number').textContent);
+            }
+        });
+    </script>
+</body>
+</html>

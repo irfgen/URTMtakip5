@@ -1,0 +1,4 @@
+Bu bir test dosyasıdır.
+Parça kayıt sistemi test için oluşturulmuştur.
+Tarih: 2025-01-27
+Test Parça Kodu: KB_MAKAS3_031
