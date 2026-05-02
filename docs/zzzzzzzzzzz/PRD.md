@@ -14,7 +14,7 @@
 - **Gerçek Zamanlı Görünürlük**: Üretim süreçlerinin canlı takibi
 - **Entegre Yönetim**: Tüm üretim süreçlerinin tek platformda yönetimi
 - **Mobil Erişim**: Üretim sahasında mobil cihazlar ile erişim
-- **Donanım Entegrasyonu**: ESP32 tabanlı CNC monitörleme sistemi
+- **Donanım Entegrasyonu**: ESP32 tabanlı veri yakalama ve  IOT sistemleri
 - **CAD Entegrasyonu**: SolidWorks ve STEP dosya işleme araçları
 
 ## 2. Sistem Mimarisi
