@@ -71,6 +71,30 @@ type: codebase
 - **react-dropzone**: 14.3.8
 - **@hello-pangea/dnd**: 18.0.1 - Drag and drop
 
+## Multi-Agent Stack (v1.0+)
+
+### Agent Framework
+- **@anthropic-ai/claude-agent-sdk**: Claude Agent SDK for AI orchestration
+
+### Agent Modules (backend/multi-agent/)
+
+| Module | Purpose | Key Exports |
+|--------|---------|-------------|
+| `master-agent.js` | Master agent - coordination, approval, critical decisions | `MasterAgent` class |
+| `module-agent.js` | Base module agent - autonomous actions | `ModuleAgent` class |
+| `db-access.js` | Database access layer - Sequelize queries | `query`, `findAll`, `findOne`, `insert`, `update`, `remove`, `transaction` |
+| `api-client.js` | Internal API client - HTTP requests | `get`, `post`, `put`, `delete` |
+| `action-loader.js` | Action definitions loader | `ActionLoader` class |
+| `consult-master.js` | Module-to-master communication | `consultMaster`, `connect`, `disconnect` |
+| `websocket-handler.js` | Master-to-module WebSocket | WebSocket event handling |
+
+### Action Definitions
+- **action-definitions.json**: Central action registry
+  - `actions`: Defined actions with approval requirements
+  - `autonomous_actions`: Direct-execute actions (no approval needed)
+  - `agent_capabilities`: Database/API access permissions
+  - `communication`: Master↔Module communication settings
+
 ## Build & Dev Tools
 
 ### Build
@@ -82,20 +106,49 @@ type: codebase
 - **Vitest**: 1.0.2 (frontend)
 - **Supertest**: 6.3.3 (API testing)
 
+### Agent Testing
+- **Test suites**: `backend/multi-agent/test/`
+  - `db-access.test.js`: 6 tests
+  - `api-client.test.js`: 6 tests
+  - `module-agent-integration.test.js`: 6 tests
+  - `test-runner.js`: Master test runner
+
 ## Project Structure
 
 ```
 URTMtakip/
-├── backend/           # Express.js API (port 3000)
-├── frontend/        # React + Vite (port 5173)
-├── CNC_panel/       # ESP32 hardware
+├── backend/
+│   ├── src/              # Express API (port 3000)
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   └── ...
+│   └── multi-agent/      # Agentic AI modules (v1.0+)
+│       ├── master-agent.js
+│       ├── module-agent.js
+│       ├── db-access.js
+│       ├── api-client.js
+│       ├── action-loader.js
+│       ├── consult-master.js
+│       ├── websocket-handler.js
+│       ├── action-definitions.json
+│       └── test/              # Test suites (18 tests)
+├── frontend/            # React + Vite (port 5173)
+├── CNC_panel/           # ESP32 hardware
 ├── STEP_BOM_Analyzer/  # Python CAD tool
 ├── CAD_Import_Client/  # Python CAD tool
-└── docs/           # Documentation
+└── docs/               # Documentation
 ```
 
 ## Key Files
 
-- `backend/src/index.js` - Express entry point
-- `frontend/src/App.jsx` - React entry point
-- `backend/database.sqlite` - SQLite database
+| File | Purpose |
+|------|---------|
+| `backend/src/index.js` | Express entry point |
+| `backend/multi-agent/master-agent.js` | Master agent (v1.0+) |
+| `backend/multi-agent/module-agent.js` | Module agent base class (v1.0+) |
+| `backend/multi-agent/db-access.js` | Database access layer (v1.0+) |
+| `backend/multi-agent/api-client.js` | API client (v1.0+) |
+| `backend/multi-agent/action-definitions.json` | Action registry (v1.0+) |
+| `frontend/src/App.jsx` | React entry point |
+| `backend/database.sqlite` | SQLite database |
