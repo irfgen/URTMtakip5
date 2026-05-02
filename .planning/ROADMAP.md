@@ -49,7 +49,7 @@
 
 ---
 
-### Phase 4: Test & Entegrasyon
+### Phase 4: Test & Entegrasyon [x]
 
 **Description:** Sistemin test edilmesi ve mevcut sisteme entegrasyonu
 
