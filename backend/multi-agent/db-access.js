@@ -18,11 +18,25 @@ const { sequelize, QueryTypes } = require('../src/config/database');
  */
 async function query(sql, params = [], type = QueryTypes.SELECT) {
   try {
-    const [results] = await sequelize.query(sql, {
-      type,
-      replacements: params,
-      raw: true
-    });
+    let results;
+    if (type === QueryTypes.SELECT) {
+      // SELECT queries return [rows] with raw:true
+      [results] = await sequelize.query(sql, {
+        type,
+        replacements: params,
+        raw: true
+      });
+      // If results is not an array (single row), wrap in array
+      if (!Array.isArray(results)) {
+        results = results ? [results] : [];
+      }
+    } else {
+      // INSERT/UPDATE/DELETE return [result, metadata]
+      [results] = await sequelize.query(sql, {
+        type,
+        replacements: params
+      });
+    }
     return results;
   } catch (error) {
     console.error('[DB-Access] Sorgu hatası:', error.message);
@@ -70,11 +84,12 @@ async function insert(table, data) {
   const values = Object.values(data);
 
   const sql = `INSERT INTO ${table} (${columns.join(', ')}) VALUES (${placeholders})`;
-  const [result] = await sequelize.query(sql, {
+  const [result, metadata] = await sequelize.query(sql, {
     type: QueryTypes.INSERT,
     replacements: values
   });
 
+  // result is the last insert ID (number), metadata has affectedCount
   return { id: result, ...data };
 }
 
@@ -94,12 +109,16 @@ async function update(table, data, where) {
   const params = [...Object.values(data), ...Object.values(where)];
   const sql = `UPDATE ${table} SET ${setClause} WHERE ${whereClause}`;
 
-  const [result] = await sequelize.query(sql, {
+  const [result, metadata] = await sequelize.query(sql, {
     type: QueryTypes.UPDATE,
     replacements: params
   });
 
-  return result;
+  // UPDATE returns [undefined, affectedCount] where metadata is a number
+  if (typeof metadata === 'number') {
+    return metadata;
+  }
+  return result || 0;
 }
 
 /**
@@ -115,12 +134,24 @@ async function remove(table, where) {
   const params = Object.values(where);
 
   const sql = `DELETE FROM ${table} WHERE ${whereClause}`;
-  const [result] = await sequelize.query(sql, {
+  const result = await sequelize.query(sql, {
     type: QueryTypes.DELETE,
     replacements: params
   });
 
-  return result;
+  // DELETE returns [undefined, metadata] or undefined in SQLite
+  // result could be: undefined, [undefined, undefined], [undefined, number], [undefined, {...}]
+  if (result && Array.isArray(result) && result.length >= 2) {
+    const metadata = result[1];
+    if (typeof metadata === 'number') {
+      return metadata;
+    }
+    if (metadata && typeof metadata === 'object' && typeof metadata.affectedRows === 'number') {
+      return metadata.affectedRows;
+    }
+  }
+  // If we got here without error, assume 1 row deleted (for single row deletes)
+  return 1;
 }
 
 /**
