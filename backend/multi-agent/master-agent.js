@@ -8,6 +8,7 @@
 const sdk = require('@anthropic-ai/claude-agent-sdk');
 const fs = require('fs');
 const path = require('path');
+const { ActionLoader } = require('./action-loader');
 
 // Tüm 40 modül
 const MODULES = [
@@ -269,6 +270,65 @@ class MasterAgent {
       }
     }
     return results;
+  }
+
+  // Action Loader entegrasyonu
+  getActionLoader() {
+    if (!this.actionLoader) {
+      this.actionLoader = new ActionLoader();
+      this.actionLoader.load();
+    }
+    return this.actionLoader;
+  }
+
+  // Onay talebi isle
+  async handleApprovalRequest(module, action, context) {
+    const loader = this.getActionLoader();
+    const actionDef = loader.getAction(action);
+
+    if (!actionDef) {
+      return {
+        approved: false,
+        error: `Aksiyon '${action}' bulunamadi`
+      };
+    }
+
+    console.log(`\n[MASTER] Onay talebi: ${module}/${action}`);
+
+    // Master'a danışarak karar ver
+    const prompt = `Bir modül ajandan onay talebi geldi:
+
+Modül: ${module}
+Aksiyon: ${action}
+Açıklama: ${actionDef.description}
+Öncelik: ${actionDef.priority}
+Bağlam: ${JSON.stringify(context)}
+
+Bu aksiyon için onay verilmeli mi? Yanıtınızı şu şekilde verin:
+- "EVET" veya "HAYIR" ile başlayın
+- Kısaca sebebini açıklayın
+${actionDef.alternatives && actionDef.alternatives.length > 0 ? '\nAlternatif aksiyon önerileri:\n' + actionDef.alternatives.map(a => `- ${a.action}: ${a.description}`).join('\n') : ''}`;
+
+    const result = await this.masterTask(prompt);
+
+    const approved = result.toUpperCase().includes('EVET');
+    const hasAlternative = result.toUpperCase().includes('ALTERNATIF') ||
+                          result.toUpperCase().includes('YERINE');
+
+    if (hasAlternative && actionDef.alternatives) {
+      // İlk alternatif aksiyonu seç
+      const altAction = actionDef.alternatives[0];
+      return {
+        approved: false,
+        alternative: altAction,
+        message: result
+      };
+    }
+
+    return {
+      approved,
+      message: result
+    };
   }
 }
 
