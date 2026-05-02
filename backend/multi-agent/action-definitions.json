@@ -1,0 +1,247 @@
+{
+  "actions": {
+    "emir_iptal": {
+      "module": "is_emirleri",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "İş emri iptal etme",
+      "alternatives": [
+        {
+          "action": "emir_tekrar_aktive",
+          "description": "İş emrini iptal etmek yerine tekrar aktive et"
+        },
+        {
+          "action": "emir_durdur",
+          "description": "İş emrini geçici olarak durdur"
+        }
+      ]
+    },
+    "tezgah_degistir": {
+      "module": "is_emirleri",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "Tezgah değiştirme",
+      "alternatives": [
+        {
+          "action": "tezgah_beklet",
+          "description": "Tezgah değişikliğini ertele"
+        },
+        {
+          "action": "parallel_islem",
+          "description": "Aynı tezgahta paralel işlem başlat"
+        }
+      ]
+    },
+    "siparis_tetikle": {
+      "module": "stok_kartlari",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "Otomatik sipariş tetikleme",
+      "alternatives": [
+        {
+          "action": "tedarik_talebi_olustur",
+          "description": "Tedarik talebi oluştur, siparişi manuel onaya bırak"
+        },
+        {
+          "action": "stok_transfer",
+          "description": "Başka depodan stok transfer et"
+        },
+        {
+          "action": "uyari_gonder",
+          "description": "Sadece uyarı gönder, sipariş tetitleme"
+        }
+      ]
+    },
+    "kritik_uyari": {
+      "module": "stok_kartlari",
+      "requires_approval": true,
+      "priority": "medium",
+      "description": "Kritik stok uyarısı",
+      "alternatives": [
+        {
+          "action": "sessiz_mod",
+          "description": "Uyarıyı sessiz modda gönder"
+        },
+        {
+          "action": "toplu_uyari",
+          "description": "Tüm kritik stokları tek bir uyarıda gönder"
+        }
+      ]
+    },
+    "bakim_talebi": {
+      "module": "ariza_bakim",
+      "requires_approval": true,
+      "priority": "medium",
+      "description": "Bakım talebi oluşturma",
+      "alternatives": [
+        {
+          "action": "acil_mudahale",
+          "description": "Acil müdahale ekibi çağır"
+        },
+        {
+          "action": "planli_bakim",
+          "description": "Bakımı planlı olarak ata"
+        }
+      ]
+    },
+    "fason_onay": {
+      "module": "fason_isler",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "Fason iş onayı",
+      "alternatives": [
+        {
+          "action": "fason_red",
+          "description": "Fason işi reddet"
+        },
+        {
+          "action": "fason_revize",
+          "description": "Fason işi revize et, tekrar gönder"
+        }
+      ]
+    },
+    "stok_guncelle": {
+      "module": "stok_kartlari",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "Stok güncelleme",
+      "alternatives": []
+    },
+    "tezgah_durum_guncelle": {
+      "module": "tezgahlar",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "Tezgah durum güncelleme",
+      "alternatives": []
+    },
+    "is_emri_durum_guncelle": {
+      "module": "is_emirleri",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "İş emri durum güncelleme",
+      "alternatives": []
+    }
+  },
+  "modules": {
+    "is_emirleri": {
+      "name": "İş Emirleri",
+      "doc_path": "docs/moduller/01_is_emirleri_modulu.md",
+      "critical_actions": ["emir_iptal", "tezgah_degistir"],
+      "readonly_actions": ["is_emri_durum_guncelle"]
+    },
+    "tezgahlar": {
+      "name": "Tezgahlar",
+      "doc_path": "docs/moduller/02_tezgahlar_modulu.md",
+      "critical_actions": [],
+      "readonly_actions": ["tezgah_durum_guncelle"]
+    },
+    "stok_kartlari": {
+      "name": "Stok Kartları",
+      "doc_path": "docs/moduller/06_stok_kartlari_modulu.md",
+      "critical_actions": ["siparis_tetikle", "kritik_uyari"],
+      "readonly_actions": ["stok_guncelle"]
+    },
+    "ariza_bakim": {
+      "name": "Arıza Bakım",
+      "doc_path": "docs/moduller/09_ariza_bakim_modulu.md",
+      "critical_actions": ["bakim_talebi"],
+      "readonly_actions": []
+    },
+    "fason_isler": {
+      "name": "Fason İşler",
+      "doc_path": "docs/moduller/08_fason_isler_modulu.md",
+      "critical_actions": ["fason_onay"],
+      "readonly_actions": []
+    }
+  },
+  "communication": {
+    "module_to_master": {
+      "method": "REST",
+      "endpoint": "/api/master/consult",
+      "timeout_ms": 30000
+    },
+    "master_to_module": {
+      "method": "WebSocket",
+      "event": "approval_response",
+      "timeout_ms": 30000
+    }
+  },
+  "defaults": {
+    "requires_approval": false,
+    "priority": "low",
+    "timeout_ms": 30000
+  },
+  "autonomous_actions": {
+    "db_query": {
+      "module": "system",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "Veritabanı sorgusu çalıştır",
+      "db_table": null,
+      "db_operation": "query"
+    },
+    "db_read": {
+      "module": "system",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "Veritabanından kayıt oku",
+      "db_table": null,
+      "db_operation": "read"
+    },
+    "db_write": {
+      "module": "system",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "Veritabanına kayıt ekle/güncelle/sil",
+      "db_table": null,
+      "db_operation": "write"
+    },
+    "api_call": {
+      "module": "system",
+      "requires_approval": false,
+      "priority": "low",
+      "description": "Internal API çağır",
+      "api_endpoint": null
+    },
+    "stok_seviyesi_kontrol": {
+      "module": "stok_kartlari",
+      "requires_approval": false,
+      "priority": "medium",
+      "description": "Stok seviyelerini kontrol et ve kritik seviyeleri raporla",
+      "db_table": "stok_kartlari",
+      "db_operation": "read"
+    },
+    "is_emri_guncelle": {
+      "module": "is_emirleri",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "İş emri durumunu güncelle",
+      "db_table": "is_emirleri",
+      "db_operation": "write"
+    },
+    "teklif_olustur": {
+      "module": "siparisler",
+      "requires_approval": true,
+      "priority": "high",
+      "description": "Yeni teklif oluştur",
+      "db_table": "siparisler",
+      "db_operation": "insert"
+    }
+  },
+  "agent_capabilities": {
+    "database_access": {
+      "enabled": true,
+      "tables": ["is_emirleri", "stok_kartlari", "tezgahlar", "parcalar", "siparisler"],
+      "operations": ["SELECT", "INSERT", "UPDATE", "DELETE"]
+    },
+    "api_access": {
+      "enabled": true,
+      "base_url": "http://localhost:3000",
+      "endpoints": ["/api/is-emirleri", "/api/stok-kartlari", "/api/tezgahlar"]
+    },
+    "autonomous_actions": {
+      "enabled": true,
+      "max_pending_approvals": 10
+    }
+  }
+}
