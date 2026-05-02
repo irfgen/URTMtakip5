@@ -34,7 +34,7 @@
 
 ---
 
-### Phase 3: Modül Ajan Tam Yetki
+### Phase 3: Modül Ajan Tam Yetki [x]
 
 **Description:** Modül ajanlarına veritabanı erişimi + API erişimi + otonom aksiyon yetkisi
 
