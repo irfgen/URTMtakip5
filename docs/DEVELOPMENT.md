@@ -28,318 +28,114 @@
 - PlatformIO (for ESP32 development)
 - Python 3.8+ (for CAD tools)
 - FreeCAD (for STEP_BOM_Analyzer)
-- SolidWorks (for CAD_Import_Client, Windows only)
-
-### Quick Start
-
-1. **Clone Repository**
-```bash
-git clone <repository-url>
-cd URTMtakip
-```
-
-2. **Install Dependencies**
-```bash
-# Install all dependencies (root, backend, frontend)
-npm run install:all
-```
-
-3. **Start Development Servers**
-```bash
-# Start both backend and frontend
-npm run dev
-
-# Backend runs on: http://localhost:3000
-# Frontend runs on: http://localhost:5173
-```
-
-4. **Run Database Migrations**
-```bash
-cd backend
-npm run migrate
-```
 
 ---
 
 ## Development Environment Setup
 
-### Backend Setup
+### 1. Clone and Install
 
-**Location:** `backend/`
-
-1. **Install Dependencies**
 ```bash
-cd backend
-npm install
+git clone <repository-url>
+cd URTMtakip
+npm run install:all
 ```
 
-2. **Environment Variables**
-```bash
-# Create .env file
-cat > .env << EOF
+### 2. Environment Configuration
+
+Create `backend/.env`:
+
+```env
 NODE_ENV=development
 PORT=3000
-# JWT_SECRET=your-secret-key-here
-EOF
+JWT_SECRET=your-development-secret
+CORS_ORIGIN=http://localhost:5173
+UPLOAD_MAX_SIZE=100MB
 ```
 
-3. **Run Migrations**
+### 3. Run Migrations
+
 ```bash
-npm run migrate
+cd backend && npm run migrate
 ```
 
-4. **Start Development Server**
-```bash
-npm run dev    # Uses nodemon for auto-restart
-# or
-npm start      # Production mode
-```
+### 4. Start Development Server
 
-**Backend URL:** http://localhost:3000
-
-### Frontend Setup
-
-**Location:** `frontend/`
-
-1. **Install Dependencies**
-```bash
-cd frontend
-npm install
-```
-
-2. **Start Development Server**
 ```bash
 npm run dev
 ```
 
-**Frontend URL:** http://localhost:5173
-
-**Important:** Frontend always uses port 5173. If occupied, it will kill the existing process.
-
-### CNC Panel (ESP32) Setup
-
-**Location:** `CNC_panel/`
-
-1. **Install PlatformIO**
-```bash
-# Install PlatformIO CLI
-pip install platformio
-
-# or use VS Code extension
-# Install "PlatformIO IDE" extension
-```
-
-2. **Configure Wi-Fi**
-```cpp
-// Edit include/config.h
-#define WIFI_SSID "your-ssid"
-#define WIFI_PASSWORD "your-password"
-#define SERVER_URL "http://10.255.255.254:3000"
-```
-
-3. **Build and Upload**
-```bash
-cd CNC_panel
-pio run              # Build
-pio run -t upload    # Upload to ESP32
-pio device monitor   # Monitor serial output
-```
-
-### Python CAD Tools Setup
-
-**STEP_BOM_Analyzer:**
-```bash
-cd STEP_BOM_Analyzer
-pip install -r requirements.txt
-python main.py       # Launch GUI
-```
-
-**CAD_Import_Client (Windows only):**
-```bash
-cd CAD_Import_Client
-pip install -r requirements.txt
-python main.py       # Launch GUI
-```
+This starts:
+- Backend: http://localhost:3000
+- Frontend: http://localhost:5173
 
 ---
 
 ## Project Structure
 
-### Directory Layout
-
 ```
 URTMtakip/
-├── backend/                 # Express.js backend
+├── backend/              # Express.js API server
 │   ├── src/
-│   │   ├── config/          # Configuration files
-│   │   ├── controllers/     # Business logic
-│   │   ├── routes/          # API routes
-│   │   ├── models/          # Sequelize models
-│   │   ├── middleware/      # Custom middleware
-│   │   ├── migrations/      # DB migrations
-│   │   ├── services/        # Background services
-│   │   ├── socket/          # Socket.IO namespaces
-│   │   ├── modules/         # Modular features
-│   │   └── index.js         # Entry point
-│   ├── uploads/             # File upload storage
-│   ├── importlar/           # Import file storage
-│   ├── database.sqlite*     # SQLite database
-│   └── package.json
-├── frontend/                # React frontend
+│   │   ├── index.js    # Entry point
+│   │   ├── routes/    # API routes
+│   │   ├── controllers/ # Business logic
+│   │   ├── models/    # Sequelize models
+│   │   ├── migrations/ # DB migrations
+│   │   ├── services/  # Business services
+│   │   └── middleware/ # Express middleware
+│   ├── database.sqlite
+│   └── uploads/
+├── frontend/           # React application
 │   ├── src/
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/           # Page components
-│   │   ├── store/           # Redux store
-│   │   ├── hooks/           # Custom hooks
-│   │   ├── services/        # API clients
-│   │   ├── utils/           # Utilities
-│   │   ├── theme.js         # Desktop theme
-│   │   ├── theme.mobile.js  # Mobile theme
-│   │   └── App.jsx          # Main app
-│   ├── public/
-│   │   └── uploads/         # Public files
-│   └── package.json
-├── CNC_panel/               # ESP32 firmware
-│   ├── include/             # C headers
-│   ├── src/                 # C source
-│   └── platformio.ini       # Build config
-├── STEP_BOM_Analyzer/       # Python CAD tool
-├── CAD_Import_Client/       # Python SolidWorks tool
-├── docs/                    # Documentation
-├── package.json             # Root scripts
-├── pm2.config.json          # PM2 config
-└── nginx-config.conf        # Nginx config
+│   │   ├── App.jsx   # Main component
+│   │   ├── pages/   # Page components
+│   │   ├── components/ # UI components
+│   │   ├── services/ # API client
+│   │   ├── store/   # Redux store
+│   │   └── hooks/   # Custom hooks
+│   └── public/
+├── CNC_panel/          # ESP32 hardware
+├── STEP_BOM_Analyzer/  # Python CAD tool
+├── CAD_Import_Client/ # Python CAD tool
+└── docs/             # Documentation
 ```
 
 ---
 
 ## Development Workflow
 
-### Typical Development Flow
+### 1. Create a Feature Branch
 
-1. **Feature Development**
-   - Create feature branch from `v13` or `v14.dev1`
-   - Make changes in relevant modules
-   - Test locally
-   - Commit with descriptive message
-
-2. **Testing**
-   - Run unit tests: `npm test`
-   - Run frontend tests: `npm run test:frontend`
-   - Manual testing in browser
-
-3. **Code Review**
-   - Push to remote repository
-   - Create pull request
-   - Address review comments
-
-4. **Merge**
-   - Merge to main branch after approval
-   - Delete feature branch
-
-### Git Workflow
-
-**Branching:**
-- `v13` - Main stable branch
-- `v14.dev1` - Development branch
-- Feature branches - `feature/feature-name`
-
-**Commit Message Format:**
-```
-v14.dev1.{increment}: Brief description
-
-Detailed explanation of changes.
-
-- Change 1
-- Change 2
+```bash
+git checkout -b feature/your-feature-name
 ```
 
-**Example:**
-```
-v14.dev1.15: Add BOM cost tracking
+### 2. Make Changes
 
-- Add maliyet field to boms table
-- Update BOM form to include cost input
-- Add cost calculation to reports
-```
+Edit files in `backend/` or `frontend/` directories.
 
-### Adding New Features
+### 3. Test Your Changes
 
-#### Backend API Endpoint
+```bash
+# Backend tests
+cd backend && npm test
 
-1. **Create Controller**
-```javascript
-// backend/src/controllers/myFeatureController.js
-const { MyModel } = require('../models');
-
-exports.getAll = async (req, res) => {
-  try {
-    const data = await MyModel.findAll();
-    res.json({ success: true, data });
-  } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
-  }
-};
+# Frontend tests
+cd frontend && npm test
 ```
 
-2. **Create Routes**
-```javascript
-// backend/src/routes/myFeatureRoutes.js
-const express = require('express');
-const router = express.Router();
-const { getAll } = require('../controllers/myFeatureController');
+### 4. Commit Changes
 
-router.get('/', getAll);
-
-module.exports = router;
+```bash
+git add .
+git commit -m 'feat: your feature description'
 ```
 
-3. **Register Routes**
-```javascript
-// backend/src/index.js
-const myFeatureRoutes = require('./routes/myFeatureRoutes');
-app.use('/api/my-feature', myFeatureRoutes);
-```
+### 5. Push and Create PR
 
-#### Frontend Component
-
-1. **Create Component**
-```jsx
-// frontend/src/components/MyComponent.jsx
-import React, { useState, useEffect } from 'react';
-import { fetchData } from '../services/myFeatureAPI';
-
-function MyComponent() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetchData()
-      .then(response => setData(response.data))
-      .finally(() => setLoading(false));
-  }, []);
-
-  if (loading) return <div>Loading...</div>;
-  return <div>{/* render data */}</div>;
-}
-
-export default MyComponent;
-```
-
-2. **Add Route**
-```jsx
-// frontend/src/App.jsx
-import MyComponent from './components/MyComponent';
-
-<Route path="/my-feature" element={<MyComponent />} />
-```
-
-3. **Add Navigation Item**
-```jsx
-// frontend/src/components/Layout.jsx
-<MenuItem component={Link} to="/my-feature">
-  My Feature
-</MenuItem>
+```bash
+git push origin feature/your-feature-name
 ```
 
 ---
@@ -348,526 +144,167 @@ import MyComponent from './components/MyComponent';
 
 ### Backend Tests (Jest)
 
-**Location:** `backend/`
-
-**Run Tests:**
 ```bash
 cd backend
-npm test                # Run all tests
-npm run test:watch      # Watch mode
-npm run test:coverage   # With coverage
-```
-
-**Test Structure:**
-```
-backend/
-├── tests/               # Test files (create if not exists)
-│   ├── unit/           # Unit tests
-│   ├── integration/    # Integration tests
-│   └── fixtures/       # Test data
-```
-
-**Example Test:**
-```javascript
-// backend/tests/unit/isEmri.test.js
-const request = require('supertest');
-const app = require('../src/index');
-
-describe('Work Orders API', () => {
-  test('GET /api/is-emirleri should return 200', async () => {
-    const response = await request(app)
-      .get('/api/is-emirleri')
-      .expect(200);
-    expect(Array.isArray(response.body.data)).toBe(true);
-  });
-});
+npm test              # Run all tests
+npm test -- --watch  # Watch mode
+npm test -- --coverage # Coverage report
 ```
 
 ### Frontend Tests (Vitest)
 
-**Location:** `frontend/`
-
-**Run Tests:**
 ```bash
 cd frontend
-npm test                # Run all tests
-npm run test:ui         # Vitest UI
-npm run test:coverage   # With coverage
-```
-
-**Test Structure:**
-```
-frontend/
-├── src/
-│   └── __tests__/      # Test files
-```
-
-**Example Test:**
-```jsx
-// frontend/src/components/__tests__/MyComponent.test.jsx
-import { render, screen } from '@testing-library/react';
-import MyComponent from '../MyComponent';
-
-describe('MyComponent', () => {
-  test('renders loading state', () => {
-    render(<MyComponent />);
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
-  });
-});
+npm test              # Run all tests
+npm test -- --watch  # Watch mode
+npm test -- --ui     # UI interface
 ```
 
 ### ESP32 Tests (PlatformIO)
 
-**Location:** `CNC_panel/`
-
-**Run Tests:**
 ```bash
 cd CNC_panel
-pio test               # Run embedded tests
-pio test -e esp32dev    # Specific environment
-pio test -v            # Verbose output
+pio test
 ```
 
 ---
 
 ## Building and Deployment
 
-### Build Frontend
+### Frontend Build
 
 ```bash
-cd frontend
-npm run build           # Production build
-npm run preview         # Preview production build
+npm run build
 ```
 
-**Output:** `frontend/dist/`
+Output: `frontend/dist/`
 
-### Production Deployment
+### PM2 Production
 
-**Using PM2:**
 ```bash
-# Build frontend
-cd frontend && npm run build
-
-# Start with PM2
-cd ..
 pm2 start pm2.config.json
-
-# View logs
-pm2 logs
-
-# Restart
-pm2 restart all
-
-# Stop
-pm2 stop all
 ```
 
-**PM2 Configuration (`pm2.config.json`):**
-```json
-{
-  "apps": [
-    {
-      "name": "urtmtakip-backend",
-      "script": "./backend/src/index.js",
-      "instances": 1,
-      "exec_mode": "fork",
-      "env": {
-        "NODE_ENV": "production",
-        "PORT": 3000
-      }
-    }
-  ]
-}
-```
+### Nginx
 
-### Nginx Configuration
-
-**Location:** Root `nginx-config.conf`
-
-```nginx
-server {
-    listen 80;
-    server_name your-domain.com;
-
-    # Frontend static files
-    location / {
-        root /path/to/URTMtakip/frontend/dist;
-        try_files $uri $uri/ /index.html;
-    }
-
-    # Backend API proxy
-    location /api {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-
-    # Socket.IO
-    location /socket.io {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_set_header Host $host;
-    }
-}
-```
+See `nginx-config.conf` for reverse proxy setup.
 
 ---
 
 ## Code Style and Conventions
 
-### JavaScript/React Conventions
+### RESTful API
 
-**Component Structure:**
-```jsx
-// 1. Imports
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { TextField, Button } from '@mui/material';
+All API routes follow REST conventions:
+- `GET /api/resource` - List
+- `GET /api/resource/:id` - Get single
+- `POST /api/resource` - Create
+- `PUT /api/resource/:id` - Update
+- `DELETE /api/resource/:id` - Delete
 
-// 2. Component declaration
-function MyComponent({ prop1, prop2 }) {
-  // 3. Hooks
-  const [state, setState] = useState(null);
-  const dispatch = useDispatch();
+### Naming Conventions
 
-  // 4. Effects
-  useEffect(() => {
-    // Side effects
-  }, []);
+- **Files**: camelCase (isEmirleriRoutes.js)
+- **Database tables**: snake_case (is_emirleri)
+- **API endpoints**: kebab-case (/api/is-emirleri)
 
-  // 5. Event handlers
-  const handleClick = () => {
-    // Handler logic
-  };
+### Component Structure
 
-  // 6. Render
-  return (
-    <div>
-      {/* JSX */}
-    </div>
-  );
-}
-
-// 7. Exports
-export default MyComponent;
-```
-
-**Naming Conventions:**
-- Components: PascalCase (`MyComponent.jsx`)
-- Functions: camelCase (`handleClick`)
-- Constants: UPPER_SNAKE_CASE (`API_BASE_URL`)
-- Files:
-  - Components: PascalCase
-  - Utilities: camelCase
-  - Styles: kebab-case
-
-**File Organization:**
-```
-MyComponent.jsx
-MyComponent.module.css  // Component-specific styles
-```
-
-### Backend Conventions
-
-**Controller Structure:**
 ```javascript
-// 1. Dependencies
-const { Model } = require('../models');
+const ComponentName = () => {
+  // Hooks first
+  const [state, setState] = useState();
 
-// 2. Controller functions
-exports.getAll = async (req, res) => {
-  try {
-    // Logic
-    res.json({ success: true, data });
-  } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
-  }
+  // Effects
+  useEffect(() => {}, []);
+
+  // Handlers
+  const handleClick = () => {};
+
+  // Render
+  return (<JSX />);
 };
-
-// 3. Export
-exports.create = async (req, res) => {
-  // Implementation
-};
-```
-
-**Route Structure:**
-```javascript
-const express = require('express');
-const router = express.Router();
-const controller = require('../controllers/myController');
-
-// CRUD routes
-router.get('/', controller.getAll);
-router.get('/:id', controller.getById);
-router.post('/', controller.create);
-router.put('/:id', controller.update);
-router.delete('/:id', controller.delete);
-
-module.exports = router;
-```
-
-**Model Structure:**
-```javascript
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/database').sequelize;
-
-class MyModel extends Model {
-  static associate(models) {
-    // Associations
-  }
-}
-
-MyModel.init({
-  // Fields
-}, {
-  sequelize,
-  modelName: 'MyModel',
-  tableName: 'my_table',
-  timestamps: true
-});
-
-module.exports = MyModel;
 ```
 
 ---
 
 ## Debugging
 
-### Backend Debugging
+### Backend
 
-**Using VS Code:**
-```json
-// .vscode/launch.json
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Debug Backend",
-      "program": "${workspaceFolder}/backend/src/index.js",
-      "cwd": "${workspaceFolder}/backend",
-      "env": {
-        "NODE_ENV": "development"
-      }
-    }
-  ]
-}
-```
-
-**Using Chrome DevTools:**
-```bash
-node --inspect-brk backend/src/index.js
-# Open chrome://inspect in Chrome
-```
-
-### Frontend Debugging
-
-**React DevTools:**
-- Install React DevTools browser extension
-- Inspect component tree
-- View props and state
-- Profile performance
-
-**Console Logging:**
-```jsx
-console.log('Variable:', variable);
-console.error('Error:', error);
-console.warn('Warning:', warning);
-```
-
-**Network Debugging:**
-- Browser DevTools Network tab
-- Axios interceptors for logging:
-```jsx
-api.interceptors.request.use(config => {
-  console.log('Request:', config);
-  return config;
-});
-```
-
-### Database Debugging
-
-**View Database:**
-```bash
-# Use SQLite CLI
-sqlite3 backend/database.sqlite
-
-# Commands
-.tables              # List tables
-.schema is_emirleri  # Show table schema
-SELECT * FROM is_emirleri LIMIT 10;
-```
-
-**Sequelize Logging:**
 ```javascript
-// backend/src/config/database.js
-const sequelize = new Sequelize({
-  // ...
-  logging: console.log, // Enable query logging
-  logging: false,       // Disable query logging
-});
+// Debug logging
+console.log('Debug:', data);
+
+// Winston logger
+const logger = require('./src/config/logger');
+logger.debug('Debug:', data);
+```
+
+### Frontend
+
+```javascript
+// React DevTools
+// Browser console
+
+// Redux DevTools
+```
+
+### API Testing
+
+```bash
+# Test API endpoints
+node test-api-integration.js
 ```
 
 ---
 
 ## Common Tasks
 
-### Adding New Database Migration
+### Adding New Routes
 
-```bash
-cd backend/src/migrations
+1. Create controller in `backend/src/controllers/`
+2. Add route in `backend/src/routes/`
+3. Register in `backend/src/index.js`
 
-# Create migration file
-# Format: YYYYMMDDHHMMSS-description.js
-touch 20251230000001-add-my-field.js
-```
+### Adding New Pages
 
-**Migration Template:**
-```javascript
-const { DataTypes } = require('sequelize');
+1. Create component in `frontend/src/pages/`
+2. Add route in `frontend/src/App.jsx`
 
-module.exports = {
-  async up({ context: queryInterface }) {
-    await queryInterface.addColumn('my_table', 'my_field', {
-      type: DataTypes.STRING,
-      allowNull: true
-    });
-  },
+### Database Changes
 
-  async down({ context: queryInterface }) {
-    await queryInterface.removeColumn('my_table', 'my_field');
-  }
-};
-```
-
-**Run Migration:**
-```bash
-cd backend
-npm run migrate
-```
-
-### Adding New API Endpoint
-
-1. Create controller function
-2. Add route
-3. Test with Postman/curl
-4. Add frontend API service
-5. Create/update frontend component
-
-### Adding New Frontend Route
-
-1. Create page component in `frontend/src/pages/`
-2. Add route in `App.jsx`
-3. Add navigation item in `Layout.jsx`
-4. Handle mobile version if needed
-
-### Updating Database Schema
-
-1. Create migration
-2. Update model definition
-3. Test migration locally
-4. Run migration in development
-5. Update related controllers/routes
-
-### Adding Material-UI Component
-
-```jsx
-import { Button, TextField } from '@mui/material';
-
-<Button
-  variant="contained"
-  color="primary"
-  onClick={handleClick}
->
-  Click Me
-</Button>
-```
+1. Create migration in `backend/src/migrations/`
+2. Update model in `backend/src/models/`
+3. Run migration
 
 ---
 
 ## Troubleshooting
 
-### Common Issues
+### Port in Use
 
-#### Port Already in Use
-
-**Problem:** `Error: listen EADDRINUSE: address already in use :::3000`
-
-**Solution:**
 ```bash
-# Find and kill process on port 3000
-lsof -ti:3000 | xargs kill -9
-
-# or use npm script
-npm run stop    # Windows
+npm run restart
 ```
 
-#### Database Locked
+### Database Errors
 
-**Problem:** `SQLITE_CANTOPEN: database is locked`
-
-**Solution:**
 ```bash
-# Check for multiple processes
-ps aux | grep node
-
-# Restart database connection
-# Close all connections and restart backend
+cd backend && npm run migrate
 ```
 
-#### Frontend Build Errors
+### Module Errors
 
-**Problem:** Build fails with module not found errors
-
-**Solution:**
 ```bash
-cd frontend
-rm -rf node_modules
-rm package-lock.json
-npm install
-npm run build
+npm run clean:all
+npm run install:all
 ```
 
-#### Socket.IO Connection Issues
+### View Errors
 
-**Problem:** Client can't connect to Socket.IO
+Frontend terminal usually shows the error.
 
-**Solution:**
-1. Check CORS configuration in backend
-2. Verify frontend Socket.IO client URL
-3. Check network tab for connection errors
-4. Ensure Socket.IO namespace matches
+### API Errors
 
-#### ESP32 Not Connecting
-
-**Problem:** CNC Panel can't connect to Wi-Fi
-
-**Solution:**
-1. Check Wi-Fi credentials in `CNC_panel/include/config.h`
-2. Verify ESP32 is within range
-3. Check router firewall settings
-4. Monitor serial output for errors
-
-### Getting Help
-
-1. Check existing documentation in `docs/`
-2. Review similar code in the codebase
-3. Check Git commit history for changes
-4. Review error messages carefully
-5. Enable debug logging
-
----
-
-## Related Documentation
-
-- [Project Overview](./PROJECT_OVERVIEW.md) - System architecture
-- [API Reference](./API_REFERENCE.md) - Complete API documentation
-- [Component Structure](./COMPONENTS.md) - Frontend components
-- [Database Schema](./DATABASE.md) - Database tables
+Check backend terminal for error messages.
