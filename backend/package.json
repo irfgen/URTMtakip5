@@ -13,6 +13,7 @@
     "check-durum-status": "node check-durum-status.js"
   },
   "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.126",
     "archiver": "^6.0.1",
     "axios": "^1.10.0",
     "bcryptjs": "^2.4.3",
@@ -40,6 +41,7 @@
     "umzug": "^3.8.2",
     "uuid": "^11.1.0",
     "winston": "^3.11.0",
+    "ws": "^8.20.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {

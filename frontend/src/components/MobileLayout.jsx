@@ -1,6 +1,6 @@
 // filepath: /home/irfan/Documents/PROJELER/URTMtakip/frontend/src/components/MobileLayout.jsx
-import React from 'react';
-import { Box, AppBar, Toolbar, Typography, BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, AppBar, Toolbar, Typography, BottomNavigation, BottomNavigationAction, Paper, IconButton } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import BuildIcon from '@mui/icons-material/Build';
 import AssignmentIcon from '@mui/icons-material/Assignment';
@@ -14,7 +14,9 @@ import NoteIcon from '@mui/icons-material/Note'; // Notlar için ikon
 import FactoryIcon from '@mui/icons-material/Factory'; // Üretim Planı V2 için ikon
 import AccountTreeIcon from '@mui/icons-material/AccountTree'; // MAKINDEX için ikon
 import ReportProblemIcon from '@mui/icons-material/ReportProblem'; // Uygunsuzluk için ikon
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 import ViewSwitcher from './ViewSwitcher';
+import AIMasterChat from './AIMasterChat';
 
 // Ana navigasyon öğeleri (sadece mobilde en önemli olanlar)
 const navItems = [
@@ -33,11 +35,12 @@ const navItems = [
 function MobileLayout({ children }) {
   const location = useLocation();
   const currentPath = location.pathname;
-  
+  const [aiChatOpen, setAiChatOpen] = useState(false);
+
   // Mevcut seçili sekmeyi bul
   const currentPathWithoutParams = currentPath.split('/').slice(0, 3).join('/');
   const currentNavValue = navItems.findIndex(item => item.path === currentPathWithoutParams);
-  
+
   return (
     <Box sx={{ pb: 7 }}>
       {/* Üst Başlık Çubuğu */}
@@ -47,6 +50,14 @@ function MobileLayout({ children }) {
             URTM Takip Mobile
           </Typography>
           <ViewSwitcher currentLayout="mobile" />
+          <IconButton
+            color="inherit"
+            onClick={() => setAiChatOpen(true)}
+            sx={{ ml: 1 }}
+            title="AI Asistan"
+          >
+            <SmartToyIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       
@@ -120,6 +131,9 @@ function MobileLayout({ children }) {
           </BottomNavigation>
         </Box>
       </Paper>
+
+      {/* AI Chat Dialog */}
+      <AIMasterChat open={aiChatOpen} onClose={() => setAiChatOpen(false)} />
     </Box>
   );
 }

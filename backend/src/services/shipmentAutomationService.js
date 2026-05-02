@@ -1,6 +1,26 @@
 const cron = require('node-cron');
+const winston = require('winston');
 const { TedarikTalebi, Sevkiyat, Parca, Tezgah, StokKartlari, Firma, OpUser, SevkiyatDetay, TedarikTalebiDetay, TedarikDetay } = require('../models');
 const { Op } = require('sequelize');
+
+// Logger oluştur
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
+  transports: [
+    new winston.transports.File({ filename: 'error.log', level: 'error' }),
+    new winston.transports.File({ filename: 'combined.log' })
+  ]
+});
+
+if (process.env.NODE_ENV !== 'production') {
+  logger.add(new winston.transports.Console({
+    format: winston.format.simple()
+  }));
+}
 
 class ShipmentAutomationService {
   constructor() {

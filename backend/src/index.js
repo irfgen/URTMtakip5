@@ -100,11 +100,15 @@ app.use(require('./cors'));
 // Socket.IO kurulumu - CORS ile (development için tüm originlere izin ver)
 const io = new Server(httpServer, {
   cors: {
-    origin: "*", // Development için tüm originlere izin (production'da kısıtlanmalı)
+    origin: "*",
     methods: ["GET", "POST"],
     credentials: true,
-    allowedHeaders: ["*"]
-  }
+    allowedHeaders: ["Content-Type", "Authorization", "X-Client-Key", "X-Session-ID"]
+  },
+  transports: ['polling', 'websocket'],
+  allowEIO3: true,
+  pingTimeout: 60000,
+  pingInterval: 25000
 });
 // Socket.IO'yu route'larda erişilebilir hale getir
 app.set('io', io);

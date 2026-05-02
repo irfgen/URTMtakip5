@@ -285,3 +285,28 @@ URTMtakip/
 - Frontend: React 18, Vite, Material-UI, Redux Toolkit, Vitest
 - Testing: Jest (backend), Vitest (frontend), Supertest
 - Real-time: Socket.IO for live updates
+- AI Integration: Claude Agent SDK, Claude Code CLI
+
+## AI Integration (Claude Code & SDK)
+
+### Claude Code CLI
+Claude Code CLI zaten kurulu ve kullanıma hazır:
+```bash
+cd backend
+claude --print --permission-mode bypassPermissions "prompt here"
+```
+
+### Claude Agent SDK
+`@anthropic-ai/claude-agent-sdk@0.2.126` backend'e kurulu:
+```javascript
+const sdk = require('@anthropic-ai/claude-agent-sdk');
+// SDK fonksiyonlarını kullan
+```
+
+**Test Dosyası:** `backend/claude-sdk-test.js`
+**Dokümantasyon:** `backend/CLAUDE_AGENT_SDK.md`
+
+**API Key Gerekli:** `.env` dosyasına `ANTHROPIC_API_KEY=sk-...` ekleyin.
+
+### Coding Agent Kullanımı
+OpenClaw coding-agent skill ile Claude Code'a görev delege edilebilir.

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import BuildIcon from '@mui/icons-material/Build';
@@ -23,6 +23,8 @@ import ReceiptIcon from '@mui/icons-material/Receipt';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 
 import ViewSwitcher from './ViewSwitcher'; // Görünüm değiştirici
+import AIMasterChat from './AIMasterChat';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 
 const drawerWidth = 180;
 
@@ -50,6 +52,7 @@ const menuItems = [
 
 function Layout({ children }) {
   const location = useLocation();
+  const [aiChatOpen, setAiChatOpen] = useState(false);
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -59,6 +62,14 @@ function Layout({ children }) {
             URTM Takip
           </Typography>
           <ViewSwitcher currentLayout="desktop" />
+          <IconButton
+            color="inherit"
+            onClick={() => setAiChatOpen(true)}
+            sx={{ ml: 1 }}
+            title="AI Asistan"
+          >
+            <SmartToyIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -118,6 +129,9 @@ function Layout({ children }) {
       >
         {children}
       </Box>
+
+      {/* AI Chat Dialog */}
+      <AIMasterChat open={aiChatOpen} onClose={() => setAiChatOpen(false)} />
     </Box>
   );
 }

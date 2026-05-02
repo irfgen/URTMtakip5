@@ -128,3 +128,15 @@ htmlcov/
 .fusebox/
 .dynamodb/
 .tern-port
+
+# ── GSD baseline (auto-generated) ──
+.gsd
+.gsd-id
+.mcp.json
+.bg-shell/
+.vscode/
+.env.*
+!.env.example
+.venv/
+target/
+vendor/

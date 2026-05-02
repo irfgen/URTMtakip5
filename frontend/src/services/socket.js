@@ -22,13 +22,12 @@ class SocketService {
       return this.socket;
     }
 
-    // Development modunda proxy üzerinden bağlan, production'da doğrudan backend'e
-    const socketUrl = import.meta.env.DEV
-      ? window.location.origin  // Proxy kullan (localhost:5173)
-      : (import.meta.env.VITE_SOCKET_URL || 'http://127.0.0.1:3000');
+    // Development ve production'da doğrudan backend'e bağlan
+    // Proxy, HTTP istekleri için çalışır ama WebSocket bazen sorun çıkarabilir
+    const socketUrl = import.meta.env.VITE_SOCKET_URL || 'http://127.0.0.1:3000';
 
     this.socket = io(socketUrl, {
-      transports: ['websocket', 'polling'],
+      transports: ['polling'],
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionAttempts: 10,
