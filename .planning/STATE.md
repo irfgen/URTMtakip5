@@ -1,10 +1,16 @@
 ---
-name: STATE.md
-description: v2.0 PostgreSQL Migrasyonu milestone state
-status: planning
+gsd_state_version: 1.0
 milestone: v2.0
-version: "2.0"
-project_name: sqltopos
+milestone_name: PostgreSQL Migrasyonu
+status: ready_to_plan
+last_updated: "2026-05-03T07:44:25.990Z"
+last_activity: 2026-05-03 -- Phase 7 execution started
+progress:
+  total_phases: 8
+  completed_phases: 6
+  total_plans: 11
+  completed_plans: 6
+  percent: 75
 ---
 
 # State: ÜRTM Takip v2.0
@@ -14,6 +20,7 @@ project_name: sqltopos
 **Goal:** SQLite → PostgreSQL tam geçiş. Tüm veri kayıtları PostgreSQL'e taşınacak, mevcut kod tabanı PostgreSQL ile çalışacak şekilde güncellenecek.
 
 **Target features:**
+
 - PostgreSQL kurulumu ve bağlantı altyapısı
 - Sequelize PostgreSQL yapılandırması (56 model, 26 migration)
 - Veri migrasyonu (SQLite → PostgreSQL, 328MB)
@@ -21,10 +28,10 @@ project_name: sqltopos
 
 ## Current Position
 
-Phase: 6 (next to execute)
-Plan: —
-Status: Ready to execute
-Last activity: 2026-05-03 — Phase 5 completed
+Phase: 08
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-05-03
 
 ## Progress
 
